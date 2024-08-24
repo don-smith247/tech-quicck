@@ -1,0 +1,108 @@
+*, html {
+    margin:0;
+    padding:0;  
+}
+nav{
+    background-color:  #FF6700;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+}
+.h-menu{
+    display: flex;
+    gap: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.h-btn{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border: none;
+}
+.h-btn1{
+    padding: 10px;
+    color: white;
+    border: solid;
+    border-color: black;
+    background-color: #FF6700;
+}
+.product-p{
+    margin: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.first-section-product{
+    margin: 40px;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-bottom: 200px;
+}
+.first-section-product img{
+     margin: 12px;
+    width: 90%;
+    border-radius: 10px;
+}
+.what-u-will-learn{
+    margin: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.first-section-product h3{
+    margin: 12px;
+    color: #FFA500CF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.first-section-product p{
+    margin: 12px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.first-section-product ul {
+    list-style: none;
+    margin: 12px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.first-section-product ul li{
+    background-color: rgb(208, 200, 200);
+    border: none;
+    color: #FF6700;
+    border-radius: 2px;
+    padding: 5px;
+}
+.second-section-product{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 40px;
+    width: 30%;
+    padding: 30px;
+}
+.second-section-product h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.second-section-product p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.third-section-product{
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 40px;
+    width: 30%;
+    padding: 30px;
+}
+.third-section-product button{
+    padding: 15px 30px;
+    display: flex;
+    border: none;
+    background-color: #FF6700;
+    color: white;
+
+}
+.product-section {
+    display: flex;
+    justify-content: space-around; 
+
+}
