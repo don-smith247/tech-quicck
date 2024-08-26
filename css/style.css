@@ -12,6 +12,156 @@ body {
 body{
     font-family: "Poppins", sans-serif;
 }
+.boxx {
+  display: none;
+}
+.heroo{
+  background-image: url(../img/hero\ \(2\).jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 300px;
+  color: #FF6700;
+  gap: 20px;
+  p{
+    font-size: 25px;
+  }
+  button{
+    padding: 15px 25px;
+    background-color: #FF6700;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 5px;
+  }
+}
+.heroo h2{
+  font-weight: 700;
+  font-size: 35px;
+}
+@media screen and (max-width: 888px) {
+  .heroo{
+    margin-top: 50px;
+    background-size: 400px 300px;
+    background-repeat: no-repeat;
+    height: 40vh;
+    padding-top: 50px;
+    h2{
+      font-size: 20px;
+    }
+    p{
+      font-size: 15px;
+    }
+  }
+}
+.center-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+.cent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.primary-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+.tab-btn {
+  background-color: #ddd;
+  border: 2px solid transparent;
+  padding: 7px 13px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s, border-color 0.3s;
+  font-size: 1rem;
+  color: #333;
+  border-radius: 5px; 
+}
+
+.tab-btn.active {
+  background-color: #fd7338; 
+  color: white;
+  border-color: #fd7338;
+}
+
+.tab-btn:last-child {
+  margin-right: 0;
+}
+
+
+.box {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 20px;
+}
+
+.boxx {
+  display: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.boxx.active {
+  display: block;
+}
+
+
+.under-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.under-box img {
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box-title h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.box-title button {
+  background-color: #fd7338;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.box-title p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.box-title h4 {
+  font-size: 1.2rem;
+  color: #333;
+}
 button{
     border: none;
 }
@@ -320,7 +470,14 @@ button{
     top: 47%;
     color: white;
 }
-.buy{
+.boxx {
+  display: none;
+}
+
+.boxx.active {
+  display: block;
+}
+/* .buy{
     padding-top: 70px;
     padding-bottom: 100px;
     display: flex;
@@ -395,7 +552,7 @@ button{
     transition: 1s ease;
     transform: scale(1.1);
     cursor: pointer;
-}
+} */
 .our-team{
     display: flex;
     flex-direction: column;
@@ -638,6 +795,10 @@ footer{
         text-align: center;
         align-items: center;
         place-items: center;
+    }
+    .off h2{
+       position: relative;
+       top: 200px;
     }
 }
 .hero {

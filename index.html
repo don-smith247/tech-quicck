@@ -13,6 +13,8 @@
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <script src="https://kit.fontawesome.com/c6c3ca2138.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+<script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 <body>
     <main>
@@ -72,9 +74,6 @@
                         <i class="ri-github-line"></i>
                      </a>
    
-                     <a href="https://dribbble.com/" target="_blank" class="nav__social-link">
-                        <i class="ri-dribbble-line"></i>
-                     </a>
    
                      <a href="https://www.linkedin.com/" target="_blank" class="nav__social-link">
                         <i class="ri-linkedin-box-line"></i>
@@ -87,10 +86,12 @@
                   <i class="ri-menu-line"></i>
                </div>
             </nav>
-         </header>
-         <section class="hero">
-            
-         </section>
+        </header>
+        <section class="heroo">
+            <p>Witness the creation of something amazing</p>
+            <h2>The Beginning Of Something Propably Truly Super Epic</h2>
+            <button>Call to action</button>
+        </section>
         <section class="about-sec ">
             <div  class="about-up">
                 <h2>About Us</h2>
@@ -133,118 +134,136 @@
                 </div>
             </div>
         </section>
-        <section class="buy">
-            <div class="under-buy">
+        <section class="cent">
+            <div style="display: flex; flex-direction: column; max-width: 400px; text-align: center; gap: 20px;">
                 <h2>Buy From Us</h2>
                 <p>See the list of alll of our available Products lorem ipsum am out of idea in man am done bro im outta idea fr just give me something pwese any thing i i want ideas gosh</p>
-                <div class="all-btn">
-                    <button id="appBtn">APP</button>
-                    <button id="laravelBtn">LARAVEL</button>
-                    <button id="uiDesignBtn">UI DESIGN</button>
-                    <button id="phpBtn">PHP</button>
-                </div>
             </div>
-            <div class="box">
-               <div class="boxx">
-                <div class="under-box">
-                    <div>
-                        <img width="250px" height="200px" src="./img/Rectangle 54.png" alt="">
+            <div class="primary-tabs">
+                <button class="tab-btn active" data-tab-btn="app">
+                    <span class="tab-text title-small">APP</span>
+                    <div class="state-layer"></div>
+                </button>
+                <button class="tab-btn" data-tab-btn="laravel">
+                    <span class="tab-text title-small">LARAVEL</span>
+                    <div class="state-layer"></div>
+                </button>
+                <button class="tab-btn" data-tab-btn="ui-design">
+                    <span class="tab-text title-small">UI DESIGN</span>
+                    <div class="state-layer"></div>
+                </button>
+                <button class="tab-btn" data-tab-btn="php">
+                    <span class="tab-text title-small">PHP</span>
+                    <div class="state-layer"></div>
+                </button>
+                </div>
+            
+                <div class="box">
+                <!-- APP Content -->
+                <div data-tab-content="app" id="gaga" class="boxx active">
+                    <div class="under-box">
+                        <div>
+                            <img width="250px" height="200px" src="./img/Rectangle 54.png" alt="App Project">
+                        </div>
+                        <div class="box-title">
+                            <h3>App Project</h3>
+                            <button>APP</button>
+                            <p>This is a project description related to app development.</p>
+                            <h4>Starting Price: 50$</h4>
+                        </div>
                     </div>
-                    <div class="box-title">
-                        <h3>Haven1 clone</h3>
-                        <button>PHP</button>
-                        <p>Haven1 is a php and laravel website built as a safehaven for blockchain development, it is built in such a way that literally any body can build a blockchain using it.</p>
-                        <h4>Starting Price: 50$</h4>
+                    <div class="under-box">
+                        <div>
+                            <img width="250px" height="200px" src="./img/Rectangle 54.png" alt="Another App Project">
+                        </div>
+                        <div class="box-title">
+                            <h3>Another App Project</h3>
+                            <button>APP</button>
+                            <p>Another project description related to app development.</p>
+                            <h4>Starting Price: 60$</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="under-box">
-                    <div>
-                        <img width="250px" height="200px" src="./img/Rectangle 54.png" alt="">
+            
+                <!-- Laravel Content -->
+                <div data-tab-content="laravel" class="boxx">
+                    <div class="under-box">
+                        <div>
+                            <img width="250px" height="200px" src="./img/Rectangle 54.png" alt="Laravel Project">
+                        </div>
+                        <div class="box-title">
+                            <h3>Laravel Blog</h3>
+                            <button>LARAVEL</button>
+                            <p>This is a Laravel-based blog platform designed to offer powerful content management features with clean, modular code.</p>
+                            <h4>Starting Price: 100$</h4>
+                        </div>
                     </div>
-                    <div class="box-title">
-                        <h3>Haven1 clone</h3>
-                        <button>PHP</button>
-                        <p>Haven1 is a php and laravel website built as a safehaven for blockchain development, it is built in such a way that literally any body can build a blockchain using it.</p>
-                        <h4>Starting Price: 50$</h4>
-                    </div>
-                </div>
-               </div>
-               <div class="boxx">
-                <div class="under-box">
-                    <div>
-                        <img width="250px" height="200px" src="./img/Rectangle 54.png" alt="">
-                    </div>
-                    <div class="box-title">
-                        <h3>Haven1 clone</h3>
-                        <button>PHP</button>
-                        <p>Haven1 is a php and laravel website built as a safehaven for blockchain development, it is built in such a way that literally any body can build a blockchain using it.</p>
-                        <h4>Starting Price: 50$</h4>
-                    </div>
-                </div>
-                <div class="under-box">
-                    <div>
-                        <img width="250px" height="200px" src="./img/Rectangle 54.png" alt="">
-                    </div>
-                    <div class="box-title">
-                        <h3>Haven1 clone</h3>
-                        <button>PHP</button>
-                        <p>Haven1 is a php and laravel website built as a safehaven for blockchain development, it is built in such a way that literally any body can build a blockchain using it.</p>
-                        <h4>Starting Price: 50$</h4>
+                    <div class="under-box">
+                        <div>
+                            <img width="250px" height="200px" src="./img/Rectangle 54.png" alt="Laravel Shop">
+                        </div>
+                        <div class="box-title">
+                            <h3>Laravel E-commerce</h3>
+                            <button>LARAVEL</button>
+                            <p>An advanced e-commerce solution built using Laravel, offering a smooth and scalable online shopping experience.</p>
+                            <h4>Starting Price: 250$</h4>
+                        </div>
                     </div>
                 </div>
-               </div>
-               <div class="boxx">
-                <div class="under-box">
-                    <div>
-                        <img width="250px" height="200px" src="./img/Rectangle 54.png" alt="">
+            
+                <!-- UI Design Content -->
+                <div data-tab-content="ui-design" class="boxx">
+                    <div class="under-box">
+                        <div>
+                            <img width="250px" height="200px" src="./img/Rectangle 54.png" alt="UI Design Portfolio">
+                        </div>
+                        <div class="box-title">
+                            <h3>Portfolio UI Design</h3>
+                            <button>UI DESIGN</button>
+                            <p>A sleek and modern portfolio UI design, perfect for creatives looking to showcase their work in a visually appealing way.</p>
+                            <h4>Starting Price: 80$</h4>
+                        </div>
                     </div>
-                    <div class="box-title">
-                        <h3>Haven1 clone</h3>
-                        <button>PHP</button>
-                        <p>Haven1 is a php and laravel website built as a safehaven for blockchain development, it is built in such a way that literally any body can build a blockchain using it.</p>
-                        <h4>Starting Price: 50$</h4>
-                    </div>
-                </div>
-                <div class="under-box">
-                    <div>
-                        <img width="250px" height="200px" src="./img/Rectangle 54.png" alt="">
-                    </div>
-                    <div class="box-title">
-                        <h3>Haven1 clone</h3>
-                        <button>PHP</button>
-                        <p>Haven1 is a php and laravel website built as a safehaven for blockchain development, it is built in such a way that literally any body can build a blockchain using it.</p>
-                        <h4>Starting Price: 50$</h4>
-                    </div>
-                </div>
-               </div>
-               <div class="boxx">
-                <div class="under-box">
-                    <div>
-                        <img width="250px" height="200px" src="./img/Rectangle 54.png" alt="">
-                    </div>
-                    <div class="box-title">
-                        <h3>Haven1 clone</h3>
-                        <button>PHP</button>
-                        <p>Haven1 is a php and laravel website built as a safehaven for blockchain development, it is built in such a way that literally any body can build a blockchain using it.</p>
-                        <h4>Starting Price: 50$</h4>
+                    <div class="under-box">
+                        <div>
+                            <img width="250px" height="200px" src="./img/Rectangle 54.png" alt="UI Dashboard">
+                        </div>
+                        <div class="box-title">
+                            <h3>Admin Dashboard UI</h3>
+                            <button>UI DESIGN</button>
+                            <p>An intuitive and responsive admin dashboard UI, designed to provide an excellent user experience for managing web applications.</p>
+                            <h4>Starting Price: 120$</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="under-box">
-                    <div>
-                        <img width="250px" height="200px" src="./img/Rectangle 54.png" alt="">
+            
+                <!-- PHP Content -->
+                <div data-tab-content="php" class="boxx">
+                    <div class="under-box">
+                        <div>
+                            <img width="250px" height="200px" src="./img/Rectangle 54.png" alt="PHP CMS">
+                        </div>
+                        <div class="box-title">
+                            <h3>PHP Content Management System</h3>
+                            <button>PHP</button>
+                            <p>A flexible and secure PHP-based CMS designed to power websites with dynamic content management capabilities.</p>
+                            <h4>Starting Price: 150$</h4>
+                        </div>
                     </div>
-                    <div class="box-title">
-                        <h3>Haven1 clone</h3>
-                        <button>PHP</button>
-                        <p>Haven1 is a php and laravel website built as a safehaven for blockchain development, it is built in such a way that literally any body can build a blockchain using it.</p>
-                        <h4>Starting Price: 50$</h4>
+                    <div class="under-box">
+                        <div>
+                            <img width="250px" height="200px" src="./img/Rectangle 54.png" alt="PHP Forum">
+                        </div>
+                        <div class="box-title">
+                            <h3>PHP Forum</h3>
+                            <button>PHP</button>
+                            <p>An interactive forum platform built with PHP, offering features like user registration, post creation, and community moderation.</p>
+                            <h4>Starting Price: 200$</h4>
+                        </div>
                     </div>
                 </div>
-               </div>
-            </div>
-
-            <button class="view-btn">View All</button>
-        </section>
+                </div>  
+        </section> 
         <section class="our-team">
             <h2>Our Team</h2>
             <div class="developer">
@@ -311,6 +330,15 @@
                     </div>
                     <div class="slide swiper-slide">
                         <img src="./img/Rectangle 50.png" alt="" class="image">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit perspiciatis aliquid odio hic nam? Sit beatae omnis, quasi dolorum vero iste soluta reiciendis repellendus eius sunt quod, neque voluptatum. Nam.</p>
+                        <i class='bx bxs-quote-alt-left quote-icon'></i>
+                        <div class="details">
+                            <span class="name">Marnie Lotter</span>
+                            <span class="job">Web Developer</span>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="./img/Rectangle 51.png" alt="" class="image">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit perspiciatis aliquid odio hic nam? Sit beatae omnis, quasi dolorum vero iste soluta reiciendis repellendus eius sunt quod, neque voluptatum. Nam.</p>
                         <i class='bx bxs-quote-alt-left quote-icon'></i>
                         <div class="details">
