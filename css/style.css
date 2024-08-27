@@ -45,7 +45,7 @@ body{
 @media screen and (max-width: 888px) {
   .heroo{
     margin-top: 50px;
-    background-size: 400px 300px;
+    background-size: contain;
     background-repeat: no-repeat;
     height: 40vh;
     padding-top: 50px;

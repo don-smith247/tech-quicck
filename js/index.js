@@ -69,3 +69,24 @@ ScrollReveal().reveal('.heroo button', {
    distance: '50px',
    easing: 'ease-in-out'
 });
+
+const sr = ScrollReveal({
+   distance: '50px',
+   duration: 1000,
+   easing: 'ease-in-out',
+   opacity: 0,
+   reset: false 
+});
+document.addEventListener("DOMContentLoaded", function() {
+   ScrollReveal().reveal('.off', {
+       distance: '50px',
+       origin: 'bottom',
+       opacity: 0,
+       duration: 1000,
+       delay: 200,
+       easing: 'ease-in-out',
+       interval: 200,
+   });
+});
+sr.reveal('.about-up', { origin: 'top', delay: 200 });
+sr.reveal('.about-info', { origin: 'bottom', delay: 400 });
