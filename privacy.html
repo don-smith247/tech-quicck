@@ -4,34 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/privacy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
     <title>Privacy and Policy</title>
 </head>
 <body>
-    <nav>
-        <h2>Techquick</h2>
-        <div class="h-menu">
-            <p>Courses</p>
-            <p>Service</p>
-            <p>Demo</p>
-        </div>
-        <div class="two-btn">
-            <button class="h-btn">Contact Us</button>
-            <button class="h-btn1">Help Me</button>
-        </div>
-    </nav>
-    <p class="product-p">Page > Legal > Privacy Policy</p>
-    <section class="pp-section">
-        <h3>Privacy Policy</h3><br>
-        <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker. D'où vient-il?
-            Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire. Il trouve ses racines dans une oeuvre de la littérature latine classique datant de 45 av. J.-C., le rendant vieux de 2000 ans. Un professeur du Hampden-Sydney College, en Virginie, s'est intéressé à un des mots latins les plus obscurs, consectetur, extrait d'un passage du Lorem Ipsum, et en étudiant tous les usages de ce mot dans la littérature classique, découvrit la source incontestable du Lorem Ipsum. Il provient en fait des sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" (Des Suprêmes Biens et des Suprêmes Maux) de Cicéron. Cet ouvrage, très populaire pendant la Renaissance, est un traité sur la théorie de l'éthique. Les premières lignes du Lorem Ipsum, "Lorem ipsum dolor sit amet...", proviennent de la section 1.10.32.
-            L'extrait standard de Lorem Ipsum utilisé depuis le XVIè siècle est reproduit ci-dessous pour les curieux. Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" de Cicéron sont aussi reproduites dans leur version originale, accompagnée de la traduction anglaise de H. Rackham (1914).
-            Où puis-je m'en procurer?
-            Plusieurs variations de Lorem Ipsum peuvent être trouvées ici ou là, mais la majeure partie d'entre elles a été altérée par l'addition d'humour ou de mots aléatoires qui ne ressemblent pas une seconde à du texte standard. Si vous voulez utiliser un passage du Lorem Ipsum, vous devez être sûr qu'il n'y a rien d'embarrassant caché dans le texte. Tous les générateurs de Lorem Ipsum sur Internet tendent à reproduire le même extrait sans fin, ce qui fait de lipsum.com le seul vrai générateur de Lorem Ipsum. Iil utilise un dictionnaire de plus de 200 mots latins, en combinaison de plusieurs structures de phrases, pour générer un Lorem Ipsum irréprochable. Le Lorem Ipsum ainsi obtenu ne contient aucune répétition, ni ne contient des mots farfelus, ou des touches d'humour.
-            paragraphesmotscaractèreslistesCommencez par "Lorem ipsum dolor sit amet..."
-            </p>
-    </section>
-    <section class="haven">
-        <p>Haven1 is a php and laravel website built as a safehaven for blockchain development, it is built in such a way that literally any body can build a blockchain using it.Haven1 is a php and laravel website built as a safehaven for blockchain development, it is built in such a way that literally any body can build a blockchain using it.</p>
-    </section>
+    <header class="header" id="header">
+        <nav class="nav container">
+           <a href="#" class="nav__logo">TECH-QUICK</a>
+
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item">
+                    <a href="./index.html" class="nav__link">
+                       <i class="ri-arrow-right-up-line"></i>
+                       <span>Home</span>
+                    </a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="./about.html" class="nav__link">
+                       <i class="ri-arrow-right-up-line"></i>
+                       <span>About Us</span>
+                    </a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="./blog.html" class="nav__link">
+                       <i class="ri-arrow-right-up-line"></i>
+                       <span>Blog</span>
+                    </a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="./course.html" class="nav__link">
+                       <i class="ri-arrow-right-up-line"></i>
+                       <span>Course</span>
+                    </a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="./privacy.html" class="nav__link">
+                       <i class="ri-arrow-right-up-line"></i>
+                       <span>Privacy</span>
+                    </a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="./disclaimer.html" class="nav__link">
+                       <i class="ri-arrow-right-up-line"></i>
+                       <span>Disclaimer</span>
+                    </a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="./contact.html" class="nav__link">
+                       <i class="ri-arrow-right-up-line"></i>
+                       <span>Contact</span>
+                    </a>
+                 </li>
+              </ul>
+
+              <!-- Close button -->
+              <div class="nav__close" id="nav-close">
+                 <i class="ri-close-large-line"></i>
+              </div>
+
+              <div class="nav__social">
+                 <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
+                    <i class="ri-instagram-line"></i>
+                 </a>
+
+                 <a href="https://github.com/" target="_blank" class="nav__social-link">
+                    <i class="ri-github-line"></i>
+                 </a>
+
+
+                 <a href="https://www.linkedin.com/" target="_blank" class="nav__social-link">
+                    <i class="ri-linkedin-box-line"></i>
+                 </a>
+              </div>
+           </div>
+
+           <!-- Toggle button -->
+           <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-line"></i>
+           </div>
+        </nav>
+    </header>
+     <main style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 70px;">
+        <p class="product-p">Page > Legal > Privacy Policy</p>
+        <section class="pp-section">
+            <h3>Privacy Policy</h3><br>
+            <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker. D'où vient-il?
+                Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire. Il trouve ses racines dans une oeuvre de la littérature latine classique datant de 45 av. J.-C., le rendant vieux de 2000 ans. Un professeur du Hampden-Sydney College, en Virginie, s'est intéressé à un des mots latins les plus obscurs, consectetur, extrait d'un passage du Lorem Ipsum, et en étudiant tous les usages de ce mot dans la littérature classique, découvrit la source incontestable du Lorem Ipsum. Il provient en fait des sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" (Des Suprêmes Biens et des Suprêmes Maux) de Cicéron. Cet ouvrage, très populaire pendant la Renaissance, est un traité sur la théorie de l'éthique. Les premières lignes du Lorem Ipsum, "Lorem ipsum dolor sit amet...", proviennent de la section 1.10.32.
+                L'extrait standard de Lorem Ipsum utilisé depuis le XVIè siècle est reproduit ci-dessous pour les curieux. Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" de Cicéron sont aussi reproduites dans leur version originale, accompagnée de la traduction anglaise de H. Rackham (1914).
+                Où puis-je m'en procurer?
+                Plusieurs variations de Lorem Ipsum peuvent être trouvées ici ou là, mais la majeure partie d'entre elles a été altérée par l'addition d'humour ou de mots aléatoires qui ne ressemblent pas une seconde à du texte standard. Si vous voulez utiliser un passage du Lorem Ipsum, vous devez être sûr qu'il n'y a rien d'embarrassant caché dans le texte. Tous les générateurs de Lorem Ipsum sur Internet tendent à reproduire le même extrait sans fin, ce qui fait de lipsum.com le seul vrai générateur de Lorem Ipsum. Iil utilise un dictionnaire de plus de 200 mots latins, en combinaison de plusieurs structures de phrases, pour générer un Lorem Ipsum irréprochable. Le Lorem Ipsum ainsi obtenu ne contient aucune répétition, ni ne contient des mots farfelus, ou des touches d'humour.
+                paragraphesmotscaractèreslistesCommencez par "Lorem ipsum dolor sit amet..."
+                </p>
+        </section>
+        <section class="haven">
+            <p>Haven1 is a php and laravel website built as a safehaven for blockchain development, it is built in such a way that literally any body can build a blockchain using it.Haven1 is a php and laravel website built as a safehaven for blockchain development, it is built in such a way that literally any body can build a blockchain using it.</p>
+        </section>
+     </main>
+     <script>
+      const navMenu = document.getElementById('nav-menu'),
+        navToggle = document.getElementById('nav-toggle'),
+        navClose = document.getElementById('nav-close')
+  
+  
+    if(navToggle){
+     navToggle.addEventListener('click', () =>{
+        navMenu.classList.add('show-menu')
+     })
+    }
+  
+  
+      if(navClose){
+     navClose.addEventListener('click', () =>{
+        navMenu.classList.remove('show-menu')
+     })
+      }
+     </script>
 </body>
 </html>

@@ -90,3 +90,4 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 sr.reveal('.about-up', { origin: 'top', delay: 200 });
 sr.reveal('.about-info', { origin: 'bottom', delay: 400 });
+
