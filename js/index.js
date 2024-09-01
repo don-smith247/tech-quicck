@@ -46,48 +46,44 @@ LastActiveTab = tabContent;
 LastActiveTabBtn = this;
 });
 });
-ScrollReveal().reveal('.heroo p', {
-   delay: 200,
-   duration: 1000,
+ScrollReveal().reveal('.about-section h2', {
    origin: 'left',
-   distance: '50px',
-   easing: 'ease-in-out'
+   distance: '100px',
+   duration: 1000,
+   easing: 'ease-in-out',
+   delay: 200
 });
 
-ScrollReveal().reveal('.heroo h2', {
-   delay: 400,
-   duration: 1000,
+ScrollReveal().reveal('.intro-text', {
    origin: 'right',
-   distance: '50px',
-   easing: 'ease-in-out'
-});
-
-ScrollReveal().reveal('.heroo button', {
-   delay: 600,
+   distance: '100px',
    duration: 1000,
-   origin: 'bottom',
-   distance: '50px',
-   easing: 'ease-in-out'
+   easing: 'ease-in-out',
+   delay: 400
 });
 
-const sr = ScrollReveal({
+ScrollReveal().reveal('.about-item', {
+   origin: 'bottom',
    distance: '50px',
    duration: 1000,
    easing: 'ease-in-out',
-   opacity: 0,
-   reset: false 
+   interval: 200 
 });
-document.addEventListener("DOMContentLoaded", function() {
-   ScrollReveal().reveal('.off', {
-       distance: '50px',
-       origin: 'bottom',
-       opacity: 0,
-       duration: 1000,
-       delay: 200,
-       easing: 'ease-in-out',
-       interval: 200,
-   });
-});
-sr.reveal('.about-up', { origin: 'top', delay: 200 });
-sr.reveal('.about-info', { origin: 'bottom', delay: 400 });
-
+ScrollReveal().reveal('.service-card', {
+   origin: 'bottom',         
+   distance: '50px',         
+   duration: 1000,           
+   delay: 200,               
+   easing: 'ease-in-out',    
+   reset: false,             
+   interval: 200             
+ });
+ ScrollReveal().reveal('.team-member', {
+   origin: 'bottom',        
+   distance: '50px',         
+   duration: 1000,           
+   delay: 200,               
+   easing: 'ease-in-out',   
+   reset: false,            
+   interval: 200            
+ });

@@ -22,7 +22,7 @@
     <main>
         <header class="header" id="header">
             <nav class="nav container">
-               <a href="#" class="nav__logo">TECH-QUICK</a>
+               <a href="#" class="nav__logo" style="font-weight: 800;">TECH-QUICK</a>
    
                <div class="nav__menu" id="nav-menu">
                   <ul class="nav__list">
@@ -104,24 +104,35 @@
         <section class="hero" id="hero">
             <canvas></canvas>
             <div class="content">
-                <p>Witness the creation of something amazing</p>
+                <p style="margin-bottom: 20px;">Witness the creation of something amazing</p>
                 <h1>The Beginning Of Something Propably Truly Super Epic</h1>
+                <a href="./contact.html" class="hero-btn">Get Started</a>
             </div>
         </section>
-        
-        <!-- Include jQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <!-- JavaScript file -->
         <script src="script.js"></script>
-        <section class="about-sec ">
-            <div  class="about-up">
-                <h2>About Us</h2>
-                <p>next gen web solution</p>
-            </div>
-            <div class="about-title about-info">
-                <p>We are the best at what we do, if you dont believe in us then probably go shine. We are a group of Specialist In Fields such as Web Develepment, Social media marketing Ui/Ux designing and app Development. We do Small and big and small and big and big and anything. We hoof and puff we gleam and shimmer we do what we know bests. So if you got a gig for us gently send a message dear, we will provide a way to reach us, and you will learn what we can makeeeeeeeeeeeeeeeeeeeeeeeeee.</p>
-            </div>
-        </section>
+        <section class="about-section">
+          <div class="about-container">
+              <h2>About Us</h2>
+              <p class="intro-text">
+                  We are a passionate team of developers, designers, and marketers dedicated to delivering top-notch digital solutions. Our expertise spans across full-stack development, UI/UX design, and social media marketing.
+              </p>
+              <div class="about-details">
+                  <div class="about-item">
+                      <h3>Our Mission</h3>
+                      <p>To empower businesses with innovative technology solutions that drive growth and success.</p>
+                  </div>
+                  <div class="about-item">
+                      <h3>Our Vision</h3>
+                      <p>To be a leading tech team known for excellence in web development, design, and digital marketing.</p>
+                  </div>
+                  <div class="about-item">
+                      <h3>Our Values</h3>
+                      <p>Innovation, integrity, and customer satisfaction are at the core of everything we do.</p>
+                  </div>
+              </div>
+          </div>
+        </section> 
         <section class="service" id="service">
             <div class="ccontainer">
               <div style="display: flex; flex-direction: column; align-items: center;">
@@ -233,8 +244,7 @@
                 </li>
               </ul>
             </div>
-          </section>
-          
+        </section>
         <section class="cent">
             <div style="display: flex; flex-direction: column; max-width: 400px; text-align: center; gap: 20px;">
                 <h2>Buy From Us</h2>
@@ -365,56 +375,38 @@
                 </div>
                 </div>  
         </section> 
-        <section class="our-team">
-            <h2>Our Team</h2>
-            <div class="developer">
-                <div class="dev">
-                    <h2>Need A Full Stack Web Developer?</h2>
-                    <p>Do you need  full stack mern  website developers to freelance for you?</p>
-                    <button>Contact Us</button>
-                </div>
-                <div class="devv">
-                    <img src="./img/Rectangle 49.png" alt="">
-                    <h3>Abdulfatah Abdullahi</h3>
-                    <p>Chief Web Developer TechQuick</p>
-                </div>
-            </div>
-            <div class="developer yup">
-                <div class="devvy ">
-                    <img src="./img/Rectangle 50.png" alt="">
-                    <h3>Abdullah Smith</h3>
-                    <p>Professional Frontend Developer</p>
-                </div>
-                <div class="devy">
-                    <h2>Need A Frontend Developer?</h2>
-                    <p>Do you need  website developers to freelance for you?</p>
-                    <button>Contact Us</button>
-                </div>
-            </div>
-            <div class="developer">
-                <div class="dev">
-                    <h2>Need A UI UX Designer</h2>
-                    <p>Are you in need of ui ux designers for you website and app?</p>
-                    <button>Contact Us</button>
-                </div>
-                <div class="devv">
-                    <img src="./img/Rectangle 51.png" alt="">
-                    <h3>Kamal Abdul</h3>
-                    <p>Chief Ui Ux Designer TechQuick</p>
-                </div>
-            </div>
-            <div class="developer yup">
-                <div class="devvy">
-                    <img src="./img/Rectangle 52.png" alt="">
-                    <h3>Maryam Babalola</h3>
-                    <p>Expert in Product Markerting and <br> Social Media Managing</p>
-                </div>
-                <div class="deevy">
-                    <h2>Need A Product/Social Media Manager?</h2>
-                    <p>Do you need a social media manager to take control of your product?</p>
-                    <button>Contact Us</button>
-                </div>
-            </div>
+        <section class="team-section">
+          <h2 style="text-align: center; margin-bottom: 30px;">Our Team</h2>
+          <div class="team-container">
+              <div class="team-member">
+                  <h2>Need A Full Stack Web Developer?</h2>
+                  <p>Do you need full stack MERN website developers to freelance for you?</p>
+                  <img src="./img/beeeee.jpg" alt="Fullstack Developer">
+                  <h3>Fullstack Developer</h3>
+                  <p>Abdullahi Abdulfatah</p>
+              </div>
+              <div class="team-member">
+                  <h2>Need A Frontend Developer?</h2>
+                  <p>Do you need a skilled frontend developer to create stunning user interfaces?</p>
+                  <img src="./img/abdullahi-picture.jpg" alt="Frontend Developer">
+                  <h3>Frontend Developer</h3>
+                  <p>Kolawole Abdullahi</p>
+              </div>
+              <div class="team-member">
+                  <h2>Need A UI/UX Designer?</h2>
+                  <p>Do you need a creative UI/UX designer to craft user-friendly experiences?</p>
+                  <img src="./img/kayyyyy.jpg" alt="UI/UX Designer">
+                  <h3>UI/UX Designer</h3>
+                  <p>Kamal Abdulfatah</p>
+              </div>
+              <div class="team-member">
+                  <h2>Need A Social Media Marketer?</h2>
+                  <p>Do you need an expert to boost your brand’s presence on social media?</p>
+                  <img src="./img/mariam-picture.jpg" alt="Social Media Marketer">
+                  <h3>Social Media Marketer</h3>
+                  <p>Mariam Babalola</p>
+              </div>
+          </div>
         </section>
         <section class="containerr">
             <h2>What People Say About Us</h2>
@@ -459,9 +451,9 @@
                 <h2>Techquick</h2>
                 <p>Le Lorem Ipsum est simplement du faux texte employé d</p>
                 <div style="padding-bottom: 30px;">
-                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i style="color: white;" class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i style="color: white;" class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i style="color: white;" class='bx bxl-instagram' ></i></a>
                 </div>
             </div>
             <div class="footer-first-ul">

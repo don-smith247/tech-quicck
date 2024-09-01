@@ -1,41 +1,33 @@
 *, html {
     margin:0;
     padding:0;  
-}/*=============== GOOGLE FONTS ===============*/
+}
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
   --white-color: hsl(0, 0%, 100%);
   --black-color: #050A30;
 
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Montserrat Alternates", sans-serif;
   --h1-font-size: 1.5rem;
   --normal-font-size: .938rem;
 
-  /*========== Font weight ==========*/
   --font-regular: 400;
   --font-medium: 500;
 
-  /*========== z index ==========*/
+
   --z-tooltip: 10;
   --z-fixed: 100;
 }
 
-/*========== Responsive typography ==========*/
 @media screen and (min-width: 1150px) {
   :root {
     --normal-font-size: 1rem;
   }
 }
 
-/*=============== BASE ===============*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -60,13 +52,12 @@ a {
   text-decoration: none;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
 .containerr {
   max-width: 1120px;
   margin-inline: 1.5rem;
 }
 
-/*=============== HEADER & NAV ===============*/
+
 .header {
   position: fixed;
   width: 100%;
@@ -98,7 +89,7 @@ a {
   cursor: pointer;
 }
 
-/* Navigation for mobile devices */
+
 @media screen and (max-width: 1150px) {
   .nav__menu {
     position: fixed;
@@ -181,7 +172,6 @@ a {
   transition: width .4s ease-out;
 }
 
-/* Animation link on hover */
 .nav__link:hover span {
   margin-left: 2.5rem;
 }
@@ -195,7 +185,7 @@ a {
   width: 100%;
 }
 
-/* Sibling fade animation */
+
 .nav__list:has(.nav__link:hover) .nav__link:not(:hover) {
   opacity: .4;
 }
@@ -220,19 +210,17 @@ a {
   transform: translateY(-.25rem);
 }
 
-/* Show menu */
+
 .show-menu {
   left: 0;
 }
 
-/* Animation link when displaying menu */
+
 .show-menu .nav__item {
   visibility: visible;
   transform: translateX(0);
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For large devices */
 @media screen and (min-width: 1150px) {
   .container {
     margin-inline: auto;
@@ -271,7 +259,7 @@ main {
   background-color: #f4f4f4;
 }
 
-/* Breadcrumb Styling */
+
 .product-p {
   color: #050A30;
   font-size: 14px;
@@ -279,24 +267,23 @@ main {
   margin-bottom: 20px;
 }
 
-/* Section Styling with Box Shadow */
+
 .pp-section {
   background-color: white;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Added box shadow */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
   max-width: 800px;
   margin: 0 auto;
 }
 
-/* Headings */
 .pp-section h3 {
   color: #050A30;
   font-size: 24px;
   margin-bottom: 15px;
 }
 
-/* Paragraph Styling */
+
 .pp-section p {
   font-size: 16px;
   color: #555;
@@ -304,11 +291,11 @@ main {
   line-height: 1.8;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .pp-section {
       padding: 15px;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12); /* Adjusted shadow for smaller screens */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12); 
   }
 
   .pp-section h3 {
@@ -327,7 +314,7 @@ main {
 @media (max-width: 480px) {
   .pp-section {
       padding: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjusted shadow for mobile screens */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   }
 
   .pp-section h3 {
