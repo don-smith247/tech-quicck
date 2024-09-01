@@ -11,7 +11,7 @@
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --white-color: hsl(0, 0%, 100%);
-  --black-color: #FF6700;
+  --black-color: #050A30;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -266,66 +266,79 @@ a {
     column-gap: 3.5rem;
   }
 }
-.h-menu{
-    display: flex;
-    gap: 20px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-}
-.h-btn{
-    background-color: black;
-    padding: 10px;
-    color: white;
-    border: none;
-}
-.h-btn1{
-    padding: 10px;
-    color: white;
-    border: solid;
-    border-color: black;
-    background-color: #FF6700;
-}
-.product-p{
-    margin: 35px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-}
-.pp-section{
-    width: 40%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 60px;
-    margin: 5px 300px;
-   
+main {
+  padding: 20px;
+  background-color: #f4f4f4;
 }
 
-.pp-section h3{
-    font-family: Arial, Helvetica, sans-serif;
-}
-.pp-section p{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+/* Breadcrumb Styling */
+.product-p {
+  color: #050A30;
+  font-size: 14px;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 
-@media screen and (max-width: 888px){
-    body{
-        overflow-x: hidden;
-    }
-    .pp-section{
-        width: 300px;
-        margin: 0px 0px;
-        overflow-x: hidden;
-    }
-    .haven{
-        margin: 0px 0px;
-        max-width: 350px;
-    }
-    .h-menu{
-        display: none;
-    }
-    .two-btn{
-        display: none;
-    }
-    nav{
-        width: 85%;
-    }
- }
+/* Section Styling with Box Shadow */
+.pp-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Added box shadow */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Headings */
+.pp-section h3 {
+  color: #050A30;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Paragraph Styling */
+.pp-section p {
+  font-size: 16px;
+  color: #555;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pp-section {
+      padding: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12); /* Adjusted shadow for smaller screens */
+  }
+
+  .pp-section h3 {
+      font-size: 20px;
+  }
+
+  .pp-section p {
+      font-size: 14px;
+  }
+
+  .product-p {
+      font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pp-section {
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjusted shadow for mobile screens */
+  }
+
+  .pp-section h3 {
+      font-size: 18px;
+  }
+
+  .pp-section p {
+      font-size: 13px;
+  }
+
+  .product-p {
+      font-size: 10px;
+  }
+}

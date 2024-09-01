@@ -6,6 +6,32 @@
 body {
   overflow-x: hidden;
 }
+/* Ensure the canvas is behind other content */
+#hero {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+#hero canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Place behind other elements */
+}
+
+#hero .content {
+  position: relative;
+  z-index: 1; /* Place above the canvas */
+  color: #fff; /* Ensure the text is visible */
+}
+
+/* Optional: Transparent background */
+#hero {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
 .we {
   overflow: hidden;
 }
@@ -15,48 +41,8 @@ body{
 .boxx {
   display: none;
 }
-.heroo{
-  background-image: url(../img/hero\ \(2\).jpg);
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding-top: 300px;
-  padding-bottom: 200px;
-  color: #FF6700;
-  gap: 20px;
-  p{
-    font-size: 25px;
-  }
-  button{
-    padding: 15px 25px;
-    background-color: #FF6700;
-    color: white;
-    text-transform: capitalize;
-    border-radius: 5px;
-  }
-}
-.heroo h2{
-  font-weight: 700;
-  font-size: 35px;
-}
 @media screen and (max-width: 888px) {
-  .heroo{
-    margin-top: 50px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 40vh;
-    padding-top: 50px;
-    h2{
-      font-size: 20px;
-    }
-    p{
-      font-size: 15px;
-    }
-  }
+ 
 }
 .center-wrapper {
   display: flex;
@@ -96,75 +82,129 @@ body{
 }
 
 .tab-btn.active {
-  background-color: #fd7338; 
+  background-color: #061794; 
   color: white;
-  border-color: #fd7338;
+  border-color: #061794;
 }
 
 .tab-btn:last-child {
   margin-right: 0;
 }
 
-
-.box {
-  width: 100%;
-  max-width: 1000px;
-  margin-top: 20px;
+.cent {
+  padding: 20px;
+  background-color: #f5f5f5;
 }
 
 .boxx {
   display: none;
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .boxx.active {
   display: block;
 }
 
-
 .under-box {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
 }
 
-.under-box img {
-  margin-right: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.under-box:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.box-title {
+  text-align: center;
+  margin-top: 10px;
 }
 
 .box-title h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.box-title button {
-  background-color: #fd7338;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  margin-bottom: 10px;
-  border-radius: 4px;
-  cursor: pointer;
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #050A30;
 }
 
 .box-title p {
-  font-size: 1rem;
+  margin: 10px 0;
   color: #555;
-  margin-bottom: 10px;
+  max-width: 350px;
 }
 
 .box-title h4 {
-  font-size: 1.2rem;
-  color: #333;
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #050A30;
 }
-button{
-    border: none;
+
+.box-title button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #050A30;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.box-title button:hover {
+  background-color: #061794;
+}
+
+.primary-tabs {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.tab-btn {
+  position: relative;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  background-color: transparent;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.tab-btn.active {
+  color: #f4f5fa;
+}
+
+.tab-btn:hover {
+  color: #061794;
+}
+
+.tab-text {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.state-layer {
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #050A30;
+  transition: width 0.3s ease;
+}
+
+.tab-btn.active .state-layer {
+  width: 100%;
+}
+
+.tab-btn:hover .state-layer {
+  width: 100%;
 }
 
 :root {
@@ -172,7 +212,7 @@ button{
   
     
     --white-color: hsl(0, 0%, 100%);
-    --black-color: #FF6700;
+    --black-color: #050A30;
   
     
     --body-font: "Montserrat Alternates", sans-serif;
@@ -443,117 +483,114 @@ button{
 .about-title{
     max-width: 570px;
     text-align: center;
-}
-.we{
-    background-color: #fdeee8;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-.offers{
-    display: flex;
-    gap: 30px;
-}
-.off{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.off img{
-    width: 350px;
-    height: 350px
-}
-.off h2{
-    position: relative;
-    top: 47%;
-    color: white;
-}
-.boxx {
-  display: none;
+}.service {
+  background: white;
+  padding-block: 60px;
+  color: #050A30;
 }
 
-.boxx.active {
-  display: block;
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
-/* .buy{
-    padding-top: 70px;
-    padding-bottom: 100px;
-    display: flex;
+
+.service-card {
+  position: relative;
+  background: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-items: center;
+  padding: 40px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color: #050A30;
+  box-sizing: border-box;
+}
+.icon-la{
+  filter: invert(19%) sepia(100%) saturate(7500%) hue-rotate(208deg) brightness(92%) contrast(92%);
+}
+.service-card .card-title {
+  margin-bottom: 15px;
+}
+
+.service-card .card-title > a:hover,
+.service-card .card-title > a:focus {
+  color: #050A30;
+}
+
+.service-card .card-text {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.service-card .card-link {
+  color: #050A30;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.service-card:hover .card-link,
+.service-card:focus .card-link {
+  color: #050A30;
+}
+
+.service-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: #050A30;
+  transition: 0.3s;
+}
+
+.service-card:hover::after,
+.service-card:focus::after {
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .service-card {
+    flex: 1 1 calc(50% - 30px); /* Two cards per row on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .service-list {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
+  }
+  
+  .service-card {
+    width: 100%;
+    max-width: 300px;
+  }
 }
-.under-buy{
-    max-width: 500px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+
+@media (max-width: 480px) {
+  .service-card {
+    padding: 20px 15px;
+  }
+  
+  .service-card .card-text {
+    font-size: 14px;
+  }
+  
+  .service-card .card-link {
+    font-size: 14px;
+  }
 }
-.all-btn button{
-    padding: 15px 30px;
-    border-radius: 30px;
-    border: solid 2px rgb(185, 185, 185);
-    color: #FF6700;
-    background-color: white;
-    font-weight: 800;
-    cursor: pointer;
-}
-.all-btn{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.box{
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    gap: 30px;
-}
-.under-box{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    box-shadow: 
-        4px 4px 8px rgba(155, 154, 154, 0.2), 
-        -4px 4px 8px rgba(155, 154, 154, 0.2), 
-        4px -4px 8px rgba(155, 154, 154, 0.2), 
-        -4px -4px 8px rgba(155, 154, 154, 0.2);
-    width: 550px;
-    height: 270px;
-    border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.boxx{
-    display: flex;
-    gap: 30px;
-}
-.box-title button{
-    padding: 5px 15px;
-    background-color: #fdbc91;
-    color: #FF6700;
-    font-weight: 700;
-}
-.view-btn{
-    padding: 15px 60px;
-    background-color: #FF6700;
-    color: white;
-    border-radius: 10px;
-}
-.view-btn:hover{
-    background-color: transparent;
-    border: solid 2px #FF6700;
-    color: black;
-    transition: 1s ease;
-    transform: scale(1.1);
-    cursor: pointer;
-} */
 .our-team{
     display: flex;
     flex-direction: column;
@@ -577,9 +614,10 @@ button{
 }
 .dev button{
     padding: 15px 25px;
-    background-color: #FF6700;
+    background-color: #050A30;
     font-weight: 700;
     border-radius: 10px;
+    color: white;
 }
 .devv{
     display: flex;
@@ -599,9 +637,10 @@ button{
 }
 .devy button{
     padding: 15px 25px;
-    background-color: #FF6700;
+    background-color: #050A30;
     font-weight: 700;
     border-radius: 10px;
+    color: white;
 }
 .devvy{
     display: flex;
@@ -622,9 +661,10 @@ button{
 }
 .deevy button{
     padding: 15px 25px;
-    background-color: #FF6700;
+    background-color: #050A30;
     font-weight: 700;
     border-radius: 10px;
+    color: white;
 } 
 .containerr{
     height: 100vh;
@@ -632,7 +672,7 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fadcd0;
+    background-color: #3349f3;
     flex-direction: column;
 }
 .testimonial{
@@ -665,7 +705,7 @@ button{
 }
 .slide .quote-icon{
     font-size: 30px;
-    color: #FF6700;
+    color: #050A30;
 }
 .slide .details{
     display: flex;
@@ -699,7 +739,7 @@ button{
     background-color: #333;
 }
 .swiper-pagination-bullet-active{
-    background-color: #FF6700;
+    background-color: #050A30;
 }
 .lala:hover{
     background-color: #333;
@@ -707,9 +747,10 @@ button{
 footer{
     display: flex;
     justify-content: space-around;
-    background-color: #FF6700;
+    background-color: #050A30;
     padding-top: 100px;
     padding-bottom: 100px;
+    color: white;
 }
 .fa-brands{
     color: black;
@@ -831,15 +872,18 @@ footer{
 .guru-btn {
   padding: 10px 20px;
   color: white;
-  background-color: #FF6700;
+  background-color: #050A30;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+.box-title button{
+  background-color: #050A30;
+}
 
 .guru-btn:hover {
-  background-color: #e65c00;
+  background-color: #061794;
 }
 .more-pens{
   position: fixed;

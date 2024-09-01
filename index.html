@@ -14,7 +14,9 @@
 <script src="https://kit.fontawesome.com/c6c3ca2138.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
 <script src="https://unpkg.com/scrollreveal"></script>
-
+<link href="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/css/ionicons.min.css" rel="stylesheet">
+<script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <main>
@@ -99,11 +101,18 @@
                </div>
             </nav>
         </header>
-        <section class="heroo">
-            <p>Witness the creation of something amazing</p>
-            <h2>The Beginning Of Something Propably Truly Super Epic</h2>
-            <!-- <button>Call to action</button> -->
+        <section class="hero" id="hero">
+            <canvas></canvas>
+            <div class="content">
+                <p>Witness the creation of something amazing</p>
+                <h1>The Beginning Of Something Propably Truly Super Epic</h1>
+            </div>
         </section>
+        
+        <!-- Include jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- JavaScript file -->
+        <script src="script.js"></script>
         <section class="about-sec ">
             <div  class="about-up">
                 <h2>About Us</h2>
@@ -113,39 +122,119 @@
                 <p>We are the best at what we do, if you dont believe in us then probably go shine. We are a group of Specialist In Fields such as Web Develepment, Social media marketing Ui/Ux designing and app Development. We do Small and big and small and big and big and anything. We hoof and puff we gleam and shimmer we do what we know bests. So if you got a gig for us gently send a message dear, we will provide a way to reach us, and you will learn what we can makeeeeeeeeeeeeeeeeeeeeeeeeee.</p>
             </div>
         </section>
-        <section class="we">
-            <h2 style="text-transform: uppercase;">We Specialize in</h2>
-            <div>
-                <div class="offers">
-                    <div class="off">
-                        <h2>UI/Ux </h2>
-                        <img style="border-radius: 10px;" src="./img/uiux.jpg" alt="">
+        <section class="service" id="service">
+            <div class="ccontainer">
+              <div style="display: flex; flex-direction: column; align-items: center;">
+                <p class="section-subtitle">Our Services</p>
+                <h2 class="h2 section-title">Our Main Focus</h2>
+              </div>
+              <ul class="service-list">
+                <li>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <img width="100px" height="100px" src="./img/images_ui-removebg-preview.png" alt="UI/UX Design icon" class="icon-la">
                     </div>
-                    <div class="off">
-                        <h2>Website Development</h2>
-                        <img style="border-radius: 10px;" src="./img/website.jpg" alt="">
+                    <h3 class="h3 card-title">
+                      <a href="#">UI/UX Design</a>
+                    </h3>
+                    <p class="card-text">
+                      Crafting intuitive and visually appealing interfaces for a seamless user experience.
+                    </p>
+                    <a href="" class="card-link">
+                      <span>Learn More</span>
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <img  width="100px" height="100px" src="./img/website_dev-removebg-preview.png" alt="Website Development icon" class="icon-la">
                     </div>
-                    <div class="off">
-                        <h2>App Development</h2>
-                        <img style="border-radius: 10px;" src="./img/app dev.jpg" alt="">
+                    <h3 class="h3 card-title">
+                      <a href="#">Website Development</a>
+                    </h3>
+                    <p class="card-text">
+                      Building robust and scalable websites tailored to your business needs.
+                    </p>
+                    <a href="" class="card-link">
+                      <span>Learn More</span>
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <img width="100px" height="100px" src="./img/app_dev-removebg-preview.png" alt="App Development icon" class="icon-la">
                     </div>
-                </div>
-                <div class="offers">
-                    <div class="off">
-                        <h2>Social Media Marketing</h2>
-                        <img style="border-radius: 10px;" src="./img/social-media-marketing-concept-marketing-with-applications.jpg" alt="">
+                    <h3 class="h3 card-title">
+                      <a href="#">App Development</a>
+                    </h3>
+                    <p class="card-text">
+                      Creating mobile and web applications that provide excellent performance and user engagement.
+                    </p>
+                    <a href="" class="card-link">
+                      <span>Learn More</span>
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <img width="120px" height="100px" src="./img/social_media_marketing-removebg-preview.png" alt="Social Media Marketing icon" class="icon-la">
                     </div>
-                    <div class="off">
-                        <h2>Premium Courses</h2>
-                        <img style="border-radius: 10px;" src="./img/courses.jpg" alt="">
+                    <h3 class="h3 card-title">
+                      <a href="#">Social Media Marketing</a>
+                    </h3>
+                    <p class="card-text">
+                      Enhancing your brand’s online presence with strategic social media campaigns.
+                    </p>
+                    <a href="" class="card-link">
+                      <span>Learn More</span>
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <img width="100px" height="100px" src="./img/premium_courses-removebg-preview.png" alt="Premium Courses icon" class="icon-la">
                     </div>
-                    <div class="off">
-                        <h2>Custom Scripts </h2>
-                        <img style="border-radius: 10px;" src="./img/programming-background-collage.jpg" alt="">
+                    <h3 class="h3 card-title">
+                      <a href="#">Premium Courses</a>
+                    </h3>
+                    <p class="card-text">
+                      Offering high-quality courses to help you master the skills you need.
+                    </p>
+                    <a href="" class="card-link">
+                      <span>Learn More</span>
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <img width="100px" height="100px" src="./img/costume_script-removebg-preview.png" alt="Custom Scripts icon" class="icon-la">
                     </div>
-                </div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Custom Scripts</a>
+                    </h3>
+                    <p class="card-text">
+                      Providing tailored scripts to automate your processes and enhance productivity.
+                    </p>
+                    <a href="" class="card-link">
+                      <span>Learn More</span>
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                  </div>
+                </li>
+              </ul>
             </div>
-        </section>
+          </section>
+          
         <section class="cent">
             <div style="display: flex; flex-direction: column; max-width: 400px; text-align: center; gap: 20px;">
                 <h2>Buy From Us</h2>
