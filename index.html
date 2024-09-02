@@ -19,6 +19,18 @@
     <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
+  <div class="video-overlay" id="videoOverlay">
+    <video class="background-video" autoplay muted loop>
+        <source src="./7154236-hd_1066_1920_25fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="content-on-video">
+        <h1>Welcome to techquick</h1>
+        <p>Empowering businesses with cutting-edge technology solutions. Let's take your business to the next level.</p>
+        <button class="cta-btn" onclick="closeIntro()">Get Started</button>
+    </div>
+    <div class="close-icon" onclick="closeIntro()">Skip ✖</div>
+  </div>
     <main>
         <header class="header" id="header">
             <nav class="nav container">

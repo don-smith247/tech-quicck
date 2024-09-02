@@ -29,6 +29,12 @@ if(navClose){
       navMenu.classList.remove('show-menu')
    })
 }
+function closeIntro() {
+   // Hide video overlay and content
+   document.getElementById('videoOverlay').style.display = 'none';
+   // Show the main landing page content
+   document.getElementById('landingPageContent').style.display = 'block';
+}
 const $tabBtns = document.querySelectorAll("[data-tab-btn]");
 let LastActiveTab = document.querySelector("[data-tab-content].active");
 let LastActiveTabBtn = document.querySelector("[data-tab-btn].active");
