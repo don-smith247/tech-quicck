@@ -30,9 +30,7 @@ if(navClose){
    })
 }
 function closeIntro() {
-   // Hide video overlay and content
    document.getElementById('videoOverlay').style.display = 'none';
-   // Show the main landing page content
    document.getElementById('landingPageContent').style.display = 'block';
 }
 const $tabBtns = document.querySelectorAll("[data-tab-btn]");
