@@ -351,6 +351,24 @@ transform: translateX(0);
     justify-content: space-around; 
 
 }
+.containeer {
+  
+}
+.rolling-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: roll 4s linear infinite;
+  margin: 20px;
+}
+@keyframes roll {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
 @media screen and (max-width: 888px){
     .product-section{
         flex-direction: column;

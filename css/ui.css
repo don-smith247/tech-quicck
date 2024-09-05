@@ -267,6 +267,9 @@ a {
 .sign{
     filter: grayscale(100%) brightness(0%);
 }
+.hero-img{
+  border-radius: 40px;
+}
 .hero-text{
     display: flex;
     flex-direction: column;
@@ -397,7 +400,7 @@ a {
 }
 .profile-section {
     padding: 40px 20px;
-    background-color: #94c4f8; /* Customize section background color */
+    background-color: #94c4f8; 
 }
 
 .container {
@@ -624,7 +627,7 @@ footer a:hover {
     }
     .hero-img{
         width: 350px;
-        height: 350px;
+        height: 300px;
     }
     .exper{
         flex-direction: column;

@@ -42,6 +42,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--white-color);
+  overflow-x: hidden;
 }
 
 ul {
@@ -258,6 +259,12 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+.hero-img{
+  border-radius: 30px;
 }
 .layer{
     display: flex;
@@ -421,12 +428,11 @@ footer a:hover {
 
 @media screen and (max-width: 880px){
     .hero{
-        flex-direction: column;
+        flex-direction: column-reverse;
         margin-top: 100px;
-    }
-    .hero-img{
-        width: 350px;
-        height: 350px;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
     }
     .hero-txt{
         max-width: 350px;
