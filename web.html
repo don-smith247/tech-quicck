@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="./css/web.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/privacy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.css">
 </head>
 <body>
     <header class="header" id="header">
@@ -119,35 +123,217 @@
      </div>
    </div>
  </section>
- <div class="contaiiner">
-   <h1 class="yu">What do they say About Our Developers</h1>
-   <div class="testimonials">
-       <div class="testimonial">
-           <div class="llogo">
-               <img src="./img/trustpilot-review-logos 1.png" alt="Trustpilot logo">
-           </div>
-           <div class="testimonial-content">
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum at sem in feugiat. Duis ultricies lectus vel purus porttitor, vel blandit erat suscipit. Ut nec diam non lacus hendrerit interdum. Fusce volutpat, elit eu fringilla dignissim, enim urna mollis est, aliquam fringilla neque diam ut urna.
-           </div>
-           <div class="testimonial-author">James Bond</div>
-       </div>
-       <div class="testimonial">
-           <div class="logo">
-               <img src="./img/tripadvisor-logo-BCBFF13E11-seeklogo.com 2.png" alt="TripAdvisor logo">
-           </div>
-           <div class="testimonial-content">
-               James Bond Said:<br><br>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum at sem in feugiat. Duis ultricies lectus vel purus porttitor, vel blandit erat suscipit. Ut nec diam non lacus hendrerit interdum. Fusce volutpat, elit eu fringilla dignissim, enim urna mollis est, aliquam fringilla neque diam ut urna.
-           </div>
-       </div>
-       <div class="testimonial">
-           <div class="testimonial-content">
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum at sem in feugiat. Duis ultricies lectus vel purus porttitor, vel blandit erat suscipit. Ut nec diam non lacus hendrerit interdum. Fusce volutpat, elit eu fringilla dignissim, enim urna mollis est, aliquam fringilla neque diam ut urna.
-           </div>
-           <div class="testimonial-author">Daniella From IT, HQ</div>
-       </div>
-   </div>
+ <style>
+ body {
+    margin: 0;
+    padding: 0;
+    background-color: #4a90e2;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.quote-mark {
+    font-size: 48px;
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.card-author {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.author-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.author-title {
+    font-size: 12px;
+    color: #666;
+}
+
+.swiper-slide-active {
+    transform: scale(1.2);
+    z-index: 2;
+}
+@media (max-width: 768px) {
+            body{
+                overflow-x: hidden;
+            }
+            .swiper-slide {
+                width: 80%;
+                height: 70vh;
+                
+            }
+
+            .quote-mark {
+                font-size: 2rem;
+            }
+
+            .card-text {
+                font-size: 0.8rem;
+            }
+
+            .author-image {
+                width: 40px;
+                height: 40px;
+            }
+
+            .author-name {
+                font-size: 0.9rem;
+            }
+
+            .author-title {
+                font-size: 0.7rem;
+            }
+            body{
+                overflow-x: hidden;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body{
+                overflow-x: hidden;
+            }
+            .swiper-slide {
+                width: 75%;
+                height: 60vh;
+            }
+
+            .swiper-slide-active {
+                transform: scale(1.05);
+            }
+        }
+</style>
+</head>
+<body>
+<div class="swiper-container">
+<div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+        <div class="quote-mark">"</div>
+        <div class="card-content">
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="card-author">
+                <img src="/api/placeholder/50/50" alt="Author" class="author-image">
+                <div class="author-info">
+                    <span class="author-name">John Doe</span>
+                    <span class="author-title">Designer</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="quote-mark">"</div>
+        <div class="card-content">
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="card-author">
+                <img src="/api/placeholder/50/50" alt="Author" class="author-image">
+                <div class="author-info">
+                    <span class="author-name">John Doe</span>
+                    <span class="author-title">Designer</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="quote-mark">"</div>
+        <div class="card-content">
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="card-author">
+                <img src="/api/placeholder/50/50" alt="Author" class="author-image">
+                <div class="author-info">
+                    <span class="author-name">John Doe</span>
+                    <span class="author-title">Designer</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="quote-mark">"</div>
+        <div class="card-content">
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="card-author">
+                <img src="/api/placeholder/50/50" alt="Author" class="author-image">
+                <div class="author-info">
+                    <span class="author-name">John Doe</span>
+                    <span class="author-title">Designer</span>
+                </div>
+            </div>
+        </div>
+    </div>
+   
 </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"></script>
+<script>
+var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+    },
+});
+</script>
 
     <footer>
         <div>

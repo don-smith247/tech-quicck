@@ -381,35 +381,7 @@ a {
   text-align: center;
   margin-bottom: 30px;
 }
-.testimonials {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.testimonial {
-  flex: 1 1 calc(50% - 10px);
-  border: 1px solid #e0e0e0;
-  padding: 20px;
-  box-sizing: border-box;
-}
-.testimonial-content {
-  margin-bottom: 10px;
-}
-.testimonial-author {
-  font-weight: bold;
-  text-align: right;
-}
-.llogo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  margin-bottom: 10px;
-}
-.llogo img {
-  max-height: 100%;
-  max-width: 100%;
-}
+
 @media (max-width: 768px) {
   .company-logos {
     grid-template-columns: 1fr;
