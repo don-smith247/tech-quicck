@@ -86,7 +86,7 @@
                      </li>
                   </ul>
    
-                  <!-- Close button -->
+                  
                   <div class="nav__close" id="nav-close">
                      <i class="ri-close-large-line"></i>
                   </div>
@@ -107,7 +107,7 @@
                   </div>
                </div>
    
-               <!-- Toggle button -->
+               
                <div class="nav__toggle" id="nav-toggle">
                   <i class="ri-menu-line"></i>
                </div>
@@ -121,6 +121,190 @@
                 <a href="./contact.html" class="hero-btn">Get Started</a>
             </div>
         </section>
+        <style>
+          .section{
+              margin: 0;
+              padding: 0;
+              /* height: 100%; */
+              font-family: Arial, sans-serif;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: white;
+              margin-top: 100px;
+              margin-bottom: 100px;
+          }
+          .carousel-container {
+              width: 300px;
+              height: 350px;
+              position: relative;
+              overflow: hidden;
+          }
+          .carousel-slide {
+              width: 300px;
+              height: 350px;
+              position: absolute;
+              border-radius: 20px;
+              top: 0;
+              left: 0;
+              transition: transform 0.5s ease;
+          }
+          .carousel-slide img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              cursor: pointer;
+              border-radius: 20px;
+              opacity: 0.5;
+          }
+          .carousel-button {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              background: rgba(255, 255, 255, 0.7);
+              border: none;
+              padding: 10px;
+              cursor: pointer;
+              z-index: 10;
+              display: flex;
+              align-items: center;
+              font-size: 14px;
+              border-radius: 10px;
+          }
+          .carousel-button-prev { left: 10px; }
+          .carousel-button-next { right: 10px; }
+          .page {
+              display: none;
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              justify-content: center;
+              align-items: center;
+              font-size: 24px;
+              color: white;
+          }
+          .back-button {
+              position: absolute;
+              top: 20px;
+              left: 20px;
+              padding: 10px 15px;
+              background: rgba(255, 255, 255, 0.7);
+              border: none;
+              cursor: pointer;
+              border-radius: 10px;
+          }
+      </style>
+        <section class="section">
+          <div class="carousel-container">
+              <div class="carousel-slide" data-page="page1">
+                  <img src="https://picsum.photos/200/250?random=1" alt="Slide 1">
+              </div>
+              <div class="carousel-slide" data-page="page2">
+                  <img src="https://picsum.photos/200/250?random=2" alt="Slide 2">
+              </div>
+              <div class="carousel-slide" data-page="page3">
+                  <img src="https://picsum.photos/200/250?random=3" alt="Slide 3">
+              </div>
+              <button class="carousel-button carousel-button-prev"><i style="font-size: 20px;" class="fa-solid fa-arrow-left-long"></i>Previous</button>
+              <button class="carousel-button carousel-button-next">Next<i style="font-size: 20px;" class="fa-solid fa-arrow-right-long"></i></button>
+          </div>
+      
+          <div id="page1" class="page" style="background-color: #f1c40f;">
+              <h1>Welcome to Slider 1</h1>
+              <button class="back-button">Back to Carousel</button>
+          </div>
+          <div id="page2" class="page" style="background-color: #e74c3c;">
+              <h1>Welcome to Slider 2</h1>
+              <button class="back-button">Back to Carousel</button>
+          </div>
+          <div id="page3" class="page" style="background-color: #3498db;">
+              <h1>Welcome to Slider 3</h1>
+              <button class="back-button">Back to Carousel</button>
+          </div>
+      </section>
+  
+      <script>
+          const slides = document.querySelectorAll('.carousel-slide');
+          const prevBtn = document.querySelector('.carousel-button-prev');
+          const nextBtn = document.querySelector('.carousel-button-next');
+          const pages = document.querySelectorAll('.page');
+          const backBtns = document.querySelectorAll('.back-button');
+          let currentSlide = 0;
+          let autoSlideInterval;
+      
+          function showSlide(index) {
+              slides.forEach((slide, i) => {
+                  slide.style.transform = `translateX(${100 * (i - index)}%)`;
+              });
+          }
+      
+          function nextSlide() {
+              currentSlide = (currentSlide + 1) % slides.length;
+              showSlide(currentSlide);
+          }
+      
+          function prevSlide() {
+              currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+              showSlide(currentSlide);
+          }
+      
+          function startAutoSlide() {
+              autoSlideInterval = setInterval(nextSlide, 3000);
+          }
+      
+          function stopAutoSlide() {
+              clearInterval(autoSlideInterval);
+          }
+      
+          function showPage(pageId) {
+              pages.forEach(page => {
+                  page.style.display = 'none';
+              });
+              document.getElementById(pageId).style.display = 'flex';
+              stopAutoSlide();
+              prevBtn.style.display = 'none'; // Hide the buttons
+              nextBtn.style.display = 'none'; // Hide the buttons
+          }
+      
+          function showCarousel() {
+              pages.forEach(page => {
+                  page.style.display = 'none';
+              });
+              prevBtn.style.display = 'block'; // Show the buttons
+              nextBtn.style.display = 'block'; // Show the buttons
+              startAutoSlide();
+          }
+      
+          prevBtn.addEventListener('click', () => {
+              prevSlide();
+              stopAutoSlide();
+              startAutoSlide();
+          });
+      
+          nextBtn.addEventListener('click', () => {
+              nextSlide();
+              stopAutoSlide();
+              startAutoSlide();
+          });
+      
+          slides.forEach(slide => {
+              slide.addEventListener('click', () => {
+                  const pageId = slide.getAttribute('data-page');
+                  if (pageId) {
+                      showPage(pageId);
+                  }
+              });
+          });
+      
+          backBtns.forEach(btn => {
+              btn.addEventListener('click', showCarousel);
+          });
+      
+          showSlide(currentSlide);
+          startAutoSlide();
+      </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="script.js"></script>
         <section class="about-section">
