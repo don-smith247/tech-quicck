@@ -3,45 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slider 1</title>
-    <script src="https://kit.fontawesome.com/c6c3ca2138.js" crossorigin="anonymous"></script>
+    <title>Welcome to Chigisoft</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        * {
+            box-sizing: border-box;
             margin: 0;
-            background-color: #0f97f1;
+            padding: 0;
+        }
+        body {
             font-family: Arial, sans-serif;
-            position: relative;
+            background-color: black;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            margin-bottom: 2rem;
         }
         h1 {
-            color: white;
-            font-size: 36px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
-        .back-button {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            padding: 10px 15px;
-            background-color: #ffffff;
-            color: #000;
-            border: 2px solid #000;
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+        form {
+            margin-bottom: 2rem;
+        }
+        input, button {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: none;
             border-radius: 5px;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
+            font-size: 1rem;
         }
-        .back-button:hover {
-            background-color: #ddd;
+        input {
+            background-color: #333;
+            color: white;
+        }
+        button {
+            background-color: #20B2AA;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #1c9b94;
+        }
+        .action-button {
+            background-color: #333;
+            color: white;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .feedback {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #FF4500;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .center-text {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .flag {
+            width: 24px;
+            height: 16px;
+            display: inline-block;
+            margin-left: 5px;
+        }
+        .flag-ca {
+            background-color: red;
+        }
+        .flag-ng {
+            background-color: green;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.2rem;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+            input, button {
+                padding: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            input, button {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+            .feedback {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to Slider 1</h1>
-    <a href="index.html" class="back-button"> <i style="font-size: 20px;" class="fa-solid fa-arrow-left-long"></i>Back to Carousel</a>
+    <div class="container">
+        <header>
+            <h1>Hi, 👋 Welcome to Chigisoft <span class="flag flag-ca"></span><span class="flag flag-ng"></span></h1>
+        </header>
+        
+        <main>
+            <h2>We are very good at growing businesses with tech.</h2>
+            
+            <form>
+                <input type="text" placeholder="Tell Us Your Name ....">
+                <input type="text" placeholder="Your Company/Brand (Optional)">
+                <button type="submit">LET ME IN &gt;</button>
+            </form>
+            
+            <p class="center-text">CLICK THE BUTTON OR PRESS ENTER</p>
+            
+            <button class="action-button">We build apps <span>&gt;</span></button>
+            <button class="action-button">We manage IT <span>&gt;</span></button>
+        </main>
+    </div>
+    
+    <div class="feedback">
+        Feedback
+    </div>
 </body>
 </html>

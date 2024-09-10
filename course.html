@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course</title>
+    <title>Special Course Page</title>
     <link rel="stylesheet" href="/css/course.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
@@ -90,44 +90,81 @@
            </div>
         </nav>
     </header>
-    <p class="product-p">Product > Course > Frontend Course</p>
-    <section class="product-section">
-
-        <div class="first-section-product">
-            <img src="./img/fend.webp" alt="">
-            <h3>Frontend development Course </h3>
-            <p>Course type: Digital</p>
-            <p>Level: Beginner level</p>
-            <p>Course Duration: 3 Month</p><br>
-            <p>Skills you'll gain</p>
-            <ul>
-                <li><i class="fa-brands fa-html5"></i>HTML</li>
-                <li><i class="fa-brands fa-css3-alt"></i>CSS</li>
-                <li><i class="fa-brands fa-js"></i>JS</li>
-                <li><i class="fa-brands fa-react"></i>REACTJS</li>
-            </ul><br>
-            <div class="what-u-will-learn">
-            <p>What you'll learn</p>
-            <h4><i class="fa-brands fa-searchengin"></i>Create a responsive website using HTML to structure content, CSS to handle visual style, and JavaScript to develop interactive experiences.</h4><br>
-            <h4><i class="fa-brands fa-searchengin"></i>Learn Bootstrap CSS Framework to create webpages and work with GitHub repositories and version control.</h4><br>
-            <h4><i class="fa-brands fa-searchengin"></i>Learn to use React in relation to Javascript libraries and frameworks.</h4><br>
-            <h4><i class="fa-brands fa-searchengin"></i>Learn Bootstrap CSS Framework to create webpages and work with GitHub repositories and version control.</h4><br>
-            <h4><i class="fa-brands fa-searchengin"></i> Prepare for a coding interview, learn best approaches to problem-solving, and build portfolio-ready projects you can share during job interviews.</h4><br>
+    <section class="course-container">
+        <h1>Our Digital Skills Courses</h1>
+        <div class="skills-grid">
+            <a href="./frontend.html" class="skill-box">
+                <img src="./img/0_dl6DnA8iMAYSVt2O.png" alt="Frontend Development">
+                <h2>Frontend Development</h2>
+                <p>Master the art of creating responsive and interactive websites.</p>
+                <button class="learn-more-btn">Learn More</button>
+            </a>
+            <a href="backend-development.html" class="skill-box">
+                <img src="./img/programming-background-with-person-working-with-codes-computer.jpg" alt="Backend Development">
+                <h2>Backend Development</h2>
+                <p>Learn to develop robust server-side applications and databases.</p>
+                <button class="learn-more-btn">Learn More</button>
+            </a>
+            <a href="fullstack-development.html" class="skill-box">
+                <img src="./img/code-coding-programming-technology-technical-concept.jpg" alt="Fullstack Development">
+                <h2>Fullstack Development</h2>
+                <p>Combine frontend and backend skills to become a full-stack developer.</p>
+                <button class="learn-more-btn">Learn More</button>
+            </a>
+            <a href="ui-ux-design.html" class="skill-box">
+                <img src="./img/representations-user-experience-interface-design (1).jpg" alt="UI/UX Design">
+                <h2>UI/UX Design</h2>
+                <p>Design user interfaces with a focus on user experience.</p>
+                <button class="learn-more-btn">Learn More</button>
+            </a>
+            <a href="mobile-development.html" class="skill-box">
+                <img src="./img/istockphoto-1196702694-1024x1024.jpg" alt="Mobile Development">
+                <h2>Mobile Development</h2>
+                <p>Build mobile applications for Android and iOS platforms.</p>
+                <button class="learn-more-btn">Learn More</button>
+            </a>
         </div>
-        </div>
-        <div>
-         <div class="containerr">
-            <img class="rolling-image" src="./img/side-shot-code-editor-using-react-js.jpg" alt="">
-        </div>
-        <div class="second-section-product">
-              <h2>Front-End Developer Professional Certificate</h2><br>
-                <p>Launch your career as a front-end developer. Build job-ready skills for an in-demand career and earn a credential from Meta. No degree or prior experience required to get started.</p>
-        </div>
-        <div class="third-section-product">
-            <button>Purchase Now</button>
-        </div>
-    </div>
     </section>
+    <footer>
+        <div>
+            <h2>Techquick</h2>
+            <p>Le Lorem Ipsum est simplement du faux texte employé d</p>
+            <div style="padding-bottom: 30px;">
+                <a href="#"><i style="color: white;" class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i style="color: white;" class="fa-brands fa-facebook"></i></a>
+                <a href=""><i style="color: white;" class='fa-brands fa-instagram' ></i></a>
+            </div>
+        </div>
+        <div class="footer-first-ul">
+            <ul>
+                <h3>Hire A</h3>
+                <li>Website Developer</li>
+                <li>App Developer</li>
+                <li>Ui Ux Designer</li>
+                <li>Social Media Marketer</li>
+            </ul>
+            <ul>
+                <h3>Pages</h3>
+                <li>Privacy policy</li>
+                <li>Disclaimer</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div class="footer-second-ul">
+            <ul>
+                <h3>Buy From Us</h3>
+                <li>Courses</li>
+                <li>Php Scripts</li>
+                <li>Ready Made Ui design template</li>
+                <li>App sourse code</li>
+            </ul>
+            <ul>
+                <h3>Hire Techquick For A Project</h3>
+                <li><button class="hire-btn">Lets Go</button></li>
+            </ul>
+        </div>
+    </footer>
     <script>
         const navMenu = document.getElementById('nav-menu'),
           navToggle = document.getElementById('nav-toggle'),
@@ -146,7 +183,6 @@
           navMenu.classList.remove('show-menu')
        })
         }
-       </script>
-
+    </script>
 </body>
 </html>
