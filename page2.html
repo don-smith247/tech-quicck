@@ -4,44 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider 1</title>
+    <link rel="stylesheet" href="./css/page2.css">
     <script src="https://kit.fontawesome.com/c6c3ca2138.js" crossorigin="anonymous"></script>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #400ff1;
-            font-family: Arial, sans-serif;
-            position: relative;
-        }
-        h1 {
-            color: white;
-            font-size: 36px;
-        }
-        .back-button {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            padding: 10px 15px;
-            background-color: #ffffff;
-            color: #000;
-            border: 2px solid #000;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .back-button:hover {
-            background-color: #ddd;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
-    <h1>Welcome to Slider 1</h1>
+    <header class="header" id="header">
+        <nav class="nav container">
+           <a href="#" class="nav__logo" style="font-weight: 800;">TECH-QUICK</a>
+
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="./index.html" class="nav__link">
+                       <i class="ri-arrow-right-up-line"></i>
+                       <span>Home</span>
+                    </a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="./course.html" class="nav__link">
+                       <i class="ri-arrow-right-up-line"></i>
+                       <span>Course</span>
+                    </a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="./about.html" class="nav__link">
+                       <i class="ri-arrow-right-up-line"></i>
+                       <span>Service</span>
+                    </a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="./privacy.html" class="nav__link">
+                       <i class="ri-arrow-right-up-line"></i>
+                       <span>Demo</span>
+                    </a>
+                 </li>
+              </ul>
+
+              <!-- Close button -->
+              <div class="nav__close" id="nav-close">
+                 <i class="ri-close-large-line"></i>
+              </div>
+
+              <div class="nav__social">
+                 <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
+                    <i class="ri-instagram-line"></i>
+                 </a>
+
+                 <a href="https://github.com/" target="_blank" class="nav__social-link">
+                    <i class="ri-github-line"></i>
+                 </a>
+
+
+                 <a href="https://www.linkedin.com/" target="_blank" class="nav__social-link">
+                    <i class="ri-linkedin-box-line"></i>
+                 </a>
+              </div>
+           </div>
+
+           <!-- Toggle button -->
+           <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-line"></i>
+           </div>
+        </nav>
+    </header>
     <a href="index.html" class="back-button"> <i style="font-size: 20px;" class="fa-solid fa-arrow-left-long"></i>Back to Carousel</a>
+    <div class="conntainer"></div>
+        <section class="scope-section">
+            <h2 class="section-title">Scope</h2>
+            <div class="scope">
+                <div class="scope-item">Branding</div>
+                <div class="scope-item">UX/UI Design</div>
+                <div class="scope-item">Mobile App Development</div>
+                <div class="scope-item">Website Design</div>
+            </div>
+        </section>
+
+        
+        <section class="status-section">
+            <h2 class="section-title">Project Status</h2>
+            <div class="project-status">
+                <button class="status-button"><a style="text-decoration: none; color: white;" href="https://www.homeworktips.info">homeworktips.info</a></button>
+            </div>
+
+            
+            <div class="app-buttons">
+                <img src="https://example.com/get-on-iphone.png" alt="Get it on iPhone">
+                <img src="https://example.com/get-on-android.png" alt="Get it on Android">
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div>
+            <h2>Techquick</h2>
+            <p>Le Lorem Ipsum est simplement du faux texte employé d</p>
+            <div style="padding-bottom: 30px;">
+                <a href="#"><i style="color: white;" class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i style="color: white;" class="fa-brands fa-facebook"></i></a>
+                <a href=""><i style="color: white;" class='fa-brands fa-instagram' ></i></a>
+            </div>
+        </div>
+        <div class="footer-first-ul">
+            <ul>
+                <h3>Hire A</h3>
+                <li>Website Developer</li>
+                <li>App Developer</li>
+                <li>Ui Ux Designer</li>
+                <li>Social Media Marketer</li>
+            </ul>
+            <ul>
+                <h3>Pages</h3>
+                <li>Privacy policy</li>
+                <li>Disclaimer</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div class="footer-second-ul">
+            <ul>
+                <h3>Buy From Us</h3>
+                <li>Courses</li>
+                <li>Php Scripts</li>
+                <li>Ready Made Ui design template</li>
+                <li>App sourse code</li>
+            </ul>
+            <ul>
+                <h3>Hire Techquick For A Project</h3>
+                <li><button class="hire-btn">Lets Go</button></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        const navMenu = document.getElementById('nav-menu'),
+          navToggle = document.getElementById('nav-toggle'),
+          navClose = document.getElementById('nav-close')
+    
+    
+      if(navToggle){
+       navToggle.addEventListener('click', () =>{
+          navMenu.classList.add('show-menu')
+       })
+      }
+    
+    
+        if(navClose){
+       navClose.addEventListener('click', () =>{
+          navMenu.classList.remove('show-menu')
+       })
+        }
+   </script>
 </body>
 </html>

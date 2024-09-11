@@ -329,3 +329,66 @@ line-height: 1.8;
     font-size: 10px;
 }
 }
+
+footer {
+  background-color: #050A30;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+footer h2, footer h3 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+footer p {
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: gainsboro;
+}
+
+.footer-first-ul, .footer-second-ul {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-first-ul ul, .footer-second-ul ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-first-ul ul li, .footer-second-ul ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.hire-btn {
+  padding: 10px 20px;
+  background-color: #4459f5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.hire-btn:hover {
+  background-color: #051ccc;
+}
