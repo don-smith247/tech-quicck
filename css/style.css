@@ -778,6 +778,8 @@ body{
     justify-content: center;
     background-color: #3349f3;
     flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .testimonial{
     max-width: 900px;
