@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book a Call</title>
+    <link rel="stylesheet" href="./css/call.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
-    <link rel="stylesheet" href="./css/call.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
             box-sizing: border-box;
@@ -16,47 +15,38 @@
             padding: 0;
         }
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #050A30;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 80px;
-            margin-bottom: 50px;
-            min-height: 100vh;
-            padding: 20px;
-        }
-
         form {
             background-color: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
             width: 100%;
-            max-width: 500px;
+            max-width: 480px;
+            margin: auto;
+            transition: all 0.3s ease-in-out;
+            margin-top: 100px;
         }
 
         fieldset {
             border: 3px dashed #0d28f3;
             padding: 20px;
-            border-radius: 15px;
-            margin-bottom: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
         }
 
         legend {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 600;
             color: #0d28f3;
+            margin-bottom: 10px;
         }
 
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .form-group label {
-            font-size: 16px;
+            font-size: 15px;
             color: #333;
             display: block;
             margin-bottom: 5px;
@@ -65,31 +55,27 @@
         .form-group input {
             width: 100%;
             padding: 10px;
-            border-radius: 8px;
+            border-radius: 6px;
             border: 2px solid #5064fd;
-            font-size: 16px;
+            font-size: 14px;
             color: #333;
         }
 
         .form-group input:focus {
             outline: none;
             border-color: #0d28f3;
-            box-shadow: 0 0 10px #5d6ffc;
-        }
-
-        .form-group input[type="tel"] {
-            cursor: text;
+            box-shadow: 0 0 8px #5d6ffc;
         }
 
         .submit-btn {
             background-color: #050A30;
             color: white;
-            padding: 12px;
+            padding: 10px;
             border: none;
             border-radius: 8px;
             cursor: pointer;
             width: 100%;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 600;
             transition: background-color 0.3s ease;
         }
@@ -104,7 +90,15 @@
             }
 
             .submit-btn {
+                font-size: 14px;
+            }
+
+            legend {
                 font-size: 16px;
+            }
+
+            .form-group input {
+                font-size: 13px;
             }
         }
     </style>
@@ -191,7 +185,6 @@
            </div>
         </nav>
     </header>
-
     <form>
         <fieldset>
             <legend>Enter your information to book a discussion</legend>
@@ -219,47 +212,48 @@
 
         <button class="submit-btn" type="submit">Book Call</button>
     </form>
-    <hr style="margin-top: 20px; width: 100%;">
+
     <footer>
         <div>
             <h2>Techquick</h2>
             <p>Le Lorem Ipsum est simplement du faux texte employé d</p>
             <div style="padding-bottom: 30px;">
-                <a href="#"><i style="color: white;" class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i style="color: white;" class="fa-brands fa-facebook"></i></a>
-                <a href=""><i style="color: white;" class='fa-brands fa-instagram' ></i></a>
+                <a href="#" style="font-size: 14px; color: white;"><i style="color: white;" class="fa-brands fa-twitter"></i></a>
+                <a href="#" style="font-size: 14px; color: white;"><i style="color: white;" class="fa-brands fa-facebook"></i></a>
+                <a href="#" style="font-size: 14px; color: white;"><i style="color: white;" class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
         <div class="footer-first-ul">
             <ul>
                 <h3>Hire A</h3>
-                <li>Website Developer</li>
-                <li>App Developer</li>
-                <li>Ui Ux Designer</li>
-                <li>Social Media Marketer</li>
+                <li><a href="#" style="font-size: 14px; color: white;">Website Developer</a></li>
+                <li><a href="#" style="font-size: 14px; color: white;">App Developer</a></li>
+                <li><a href="#" style="font-size: 14px; color: white;">UI/UX Designer</a></li>
+                <li><a href="#" style="font-size: 14px; color: white;">Social Media Marketer</a></li>
             </ul>
             <ul>
                 <h3>Pages</h3>
-                <li>Privacy policy</li>
-                <li>Disclaimer</li>
-                <li>About Us</li>
-                <li>Contact Us</li>
+                <li><a href="#" style="font-size: 14px; color: white;">Privacy policy</a></li>
+                <li><a href="#" style="font-size: 14px; color: white;">Disclaimer</a></li>
+                <li><a href="#" style="font-size: 14px; color: white;">About Us</a></li>
+                <li><a href="#" style="font-size: 14px; color: white;">Contact Us</a></li>
             </ul>
         </div>
         <div class="footer-second-ul">
             <ul>
                 <h3>Buy From Us</h3>
-                <li>Courses</li>
-                <li>Php Scripts</li>
-                <li>Ready Made Ui design template</li>
-                <li>App sourse code</li>
+                <li><a href="#" style="font-size: 14px; color: white;">Courses</a></li>
+                <li><a href="#" style="font-size: 14px; color: white;">PHP Scripts</a></li>
+                <li><a href="#" style="font-size: 14px; color: white;">Ready Made UI Design Template</a></li>
+                <li><a href="#" style="font-size: 14px; color: white;">App Source Code</a></li>
             </ul>
             <ul>
                 <h3>Hire Techquick For A Project</h3>
-                <li><button class="hire-btn">Lets Go</button></li>
+                <li><a href="#" style="font-size: 14px; color: white;"><button class="hire-btn">Lets Go</button></a></li>
             </ul>
         </div>
     </footer>
+    
     <script>
         const navMenu = document.getElementById('nav-menu'),
           navToggle = document.getElementById('nav-toggle'),
@@ -279,6 +273,5 @@
        })
         }
     </script>
-
 </body>
 </html>

@@ -30,14 +30,14 @@
         <form class="form-container">
             <input type="text" placeholder="Tell Us Your Name ...." class="input-field">
             <input type="text" placeholder="Your Company/Brand (Optional)" class="input-field">
-            <button type="submit" class="submit-button">LET ME IN &gt;</button>
+            <button type="submit" class="submit-button">LET ME IN</button>
         </form>
         
         <p class="center-text">CLICK THE BUTTON OR PRESS ENTER</p>
         
         <div class="action-buttons">
-            <button class="action-button">We build apps <span>&gt;</span></button>
-            <button class="action-button">We manage IT <span>&gt;</span></button>
+            <button class="action-button">We build apps</button>
+            <button class="action-button">We manage IT</button>
         </div>        
     </div>
     <style>
@@ -98,9 +98,9 @@
 
 .action-button {
     padding: 10px 20px;
-    border: 2px solid #0319c0;
+    border: 2px solid #a9b0e4;
     background-color: transparent;
-    color: #0319c0;
+    color: #95a0f5;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
@@ -123,6 +123,14 @@ form, h2, .center-text, .action-buttons {
 @media (max-width: 768px){
     .hhh2{
         width: 200px;
+
+        font-size: 20px;
+    }
+    section{
+        overflow-x: hidden;
+    }
+    .hero-content h1{
+        font-size: 10px;
     }
     
 }
@@ -214,13 +222,116 @@ form, h2, .center-text, .action-buttons {
         </header>
         <section class="hero" id="hero">
             <canvas></canvas>
-            <div class="content">
-                <p style="margin-bottom: 20px;">Witness the creation of something amazing</p>
-                <h1>The Beginning Of Something Propably Truly Super Epic</h1>
-                <a href="./call.html" class="hero-btn">Get Started</a>
+            <div class="hero-content">
+                <h1>Welcome to <span>TechQuick</span></h1>
+                <p>Innovation of the future, one line of code at a time. At TechQuick, we are committed to stretching the envelope on technology and providing innovative solutions that ensure success. Our team is out to make sure of excellence in the quality of products and service delivery to our clients. Be a part of this exciting journey and belong to the future of tech!</p>
+                <a href="./call.html" class="get-started-btn">Get Started</a>
             </div>
         </section>
-        
+        <style>
+            body {
+                margin: 0;
+                font-family: 'Poppins', sans-serif;
+            }
+    
+            .hero-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                overflow: hidden;
+                padding: 0 20px; 
+            }
+    
+            .hero-content {
+                text-align: center;
+                color: white;
+                max-width: 90%; 
+            }
+    
+            .hero-content h1 {
+                font-size: 3rem; 
+                font-weight: 700;
+                position: relative;
+                display: inline-block;
+                white-space: nowrap;
+                overflow: hidden;
+                animation: typeEffect 4s steps(40, end) infinite alternate;
+            }
+    
+            @keyframes typeEffect {
+                0% { width: 0; }
+                100% { width: 100%; }
+            }
+    
+            .hero-content h1 span {
+                color: #394ff5;
+                animation: crazyColorChange 1s ease-in-out infinite alternate;
+            }
+    
+            @keyframes crazyColorChange {
+                0% { color: #394ff5; }
+                25% { color: #ff5733; }
+                50% { color: #27ae60; }
+                75% { color: #f1c40f; }
+                100% { color: #3498db; }
+            }
+    
+            .hero-content p {
+                margin-top: 1.25rem; 
+                margin-bottom: 20px;
+                font-size: 1.125rem;
+                color: #f1f1f1;
+                animation: fadeIn 3s ease-in-out infinite alternate;
+            }
+    
+          
+            .get-started-btn {
+                margin-top: 50px; 
+                padding: 0.5375rem 2rem; 
+                background-color: #394ff5;
+                color: white;
+                text-decoration: none;
+                border-radius: 1.5625rem; 
+                font-size: 1.25rem;
+                transition: background-color 0.4s ease;
+            }
+    
+            .get-started-btn:hover {
+                background-color: #050A30;
+            }
+    
+            
+            @media (max-width: 768px) {
+                .hero-content h1 {
+                    font-size: 2.5rem;
+                }
+    
+                .hero-content p {
+                    font-size: 1rem;
+                }
+    
+                .get-started-btn {
+                    padding: 0.75rem 2rem;
+                    font-size: 1rem;
+                }
+            }
+    
+            @media (max-width: 480px) {
+                .hero-content h1 {
+                    font-size: 1.575rem;
+                }
+    
+                .hero-content p {
+                    font-size: 0.875rem;
+                }
+    
+                .get-started-btn {
+                    padding: 0.5rem 1.5rem;
+                    font-size: 0.875rem;
+                }
+            }
+        </style>
     
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="script.js"></script>
@@ -682,44 +793,44 @@ form, h2, .center-text, .action-buttons {
         </section>
         <footer>
             <div>
-                <h1>Techquick</h1>
-                <p>Le Lorem Ipsum est simplement du faux texte employé</p>
+                <h2>Techquick</h2>
+                <p>Le Lorem Ipsum est simplement du faux texte employé d</p>
                 <div style="padding-bottom: 30px;">
-                    <a href="#"><i style="color: white;" class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i style="color: white;" class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i style="color: white;" class='fa-brands fa-instagram' ></i></a>
+                    <a href="#" style="font-size: 14px; color: white;"><i style="color: white;" class="fa-brands fa-twitter"></i></a>
+                    <a href="#" style="font-size: 14px; color: white;"><i style="color: white;" class="fa-brands fa-facebook"></i></a>
+                    <a href="#" style="font-size: 14px; color: white;"><i style="color: white;" class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
             <div class="footer-first-ul">
                 <ul>
                     <h3>Hire A</h3>
-                    <li>Website Developer</li>
-                    <li>App Developer</li>
-                    <li>Ui Ux Designer</li>
-                    <li>Social Media Marketer</li>
+                    <li><a href="#" style="font-size: 14px; color: white;">Website Developer</a></li>
+                    <li><a href="#" style="font-size: 14px; color: white;">App Developer</a></li>
+                    <li><a href="#" style="font-size: 14px; color: white;">UI/UX Designer</a></li>
+                    <li><a href="#" style="font-size: 14px; color: white;">Social Media Marketer</a></li>
                 </ul>
                 <ul>
                     <h3>Pages</h3>
-                    <li>Privacy policy</li>
-                    <li>Disclaimer</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
+                    <li><a href="#" style="font-size: 14px; color: white;">Privacy policy</a></li>
+                    <li><a href="#" style="font-size: 14px; color: white;">Disclaimer</a></li>
+                    <li><a href="#" style="font-size: 14px; color: white;">About Us</a></li>
+                    <li><a href="#" style="font-size: 14px; color: white;">Contact Us</a></li>
                 </ul>
             </div>
             <div class="footer-second-ul">
                 <ul>
                     <h3>Buy From Us</h3>
-                    <li>Courses</li>
-                    <li>Php Scripts</li>
-                    <li>Ready Made Ui design template</li>
-                    <li>App sourse code</li>
+                    <li><a href="#" style="font-size: 14px; color: white;">Courses</a></li>
+                    <li><a href="#" style="font-size: 14px; color: white;">PHP Scripts</a></li>
+                    <li><a href="#" style="font-size: 14px; color: white;">Ready Made UI Design Template</a></li>
+                    <li><a href="#" style="font-size: 14px; color: white;">App Source Code</a></li>
                 </ul>
                 <ul>
                     <h3>Hire Techquick For A Project</h3>
-                    <li><button class="hire-btn">Lets Go</button></li>
+                    <li><a href="#" style="font-size: 14px; color: white;"><button class="hire-btn">Lets Go</button></a></li>
                 </ul>
             </div>
-        </footer>
+        </footer>        
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="./js/swiper-bundle.min.js"></script>

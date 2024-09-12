@@ -3,29 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>doc</title>
+    <title>Book Appointment</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./css/appoint.css">
     <style>
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #050A30;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 200vh;
-            padding: 20px;
-            margin-top: 100px;
         }
 
         form {
@@ -35,7 +22,7 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             width: 100%;
             max-width: 600px;
-            margin-top: 250px;
+            margin: 150px auto;
         }
 
         fieldset {
@@ -48,7 +35,6 @@
         legend {
             font-size: 20px;
             font-weight: 600;
-            padding: 0 10px;
             color: #041ee9;
             text-align: center;
         }
@@ -130,9 +116,6 @@
             legend {
                 font-size: 18px;
             }
-            body{
-                margin-top: 50px;
-            }
         }
 
         @media (max-width: 480px) {
@@ -147,177 +130,113 @@
     </style>
 </head>
 <body>
+
     <header class="header" id="header">
         <nav class="nav container">
-           <a href="#" style="font-weight: 800;" class="nav__logo">TECH-QUICK</a>
-
-           <div class="nav__menu" id="nav-menu">
-              <ul class="nav__list">
-                 <li class="nav__item">
-                    <a href="./index.html" class="nav__link">
-                       <i class="ri-arrow-right-up-line"></i>
-                       <span>Home</span>
-                    </a>
-                 </li>
-
-                 <li class="nav__item">
-                    <a href="./about.html" class="nav__link">
-                       <i class="ri-arrow-right-up-line"></i>
-                       <span>About Us</span>
-                    </a>
-                 </li>
-
-                 <li class="nav__item">
-                    <a href="./blog.html" class="nav__link">
-                       <i class="ri-arrow-right-up-line"></i>
-                       <span>Blog</span>
-                    </a>
-                 </li>
-
-                 <li class="nav__item">
-                    <a href="./course.html" class="nav__link">
-                       <i class="ri-arrow-right-up-line"></i>
-                       <span>Course</span>
-                    </a>
-                 </li>
-
-                 <li class="nav__item">
-                    <a href="./privacy.html" class="nav__link">
-                       <i class="ri-arrow-right-up-line"></i>
-                       <span>Privacy</span>
-                    </a>
-                 </li>
-                 <li class="nav__item">
-                    <a href="./disclaimer.html" class="nav__link">
-                       <i class="ri-arrow-right-up-line"></i>
-                       <span>Disclaimer</span>
-                    </a>
-                 </li>
-                 <li class="nav__item">
-                    <a href="./contact.html" class="nav__link">
-                       <i class="ri-arrow-right-up-line"></i>
-                       <span>Contact</span>
-                    </a>
-                 </li>
-              </ul>
-
-              <!-- Close button -->
-              <div class="nav__close" id="nav-close">
-                 <i class="ri-close-large-line"></i>
-              </div>
-
-              <div class="nav__social">
-                 <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
-                    <i class="ri-instagram-line"></i>
-                 </a>
-
-                 <a href="https://github.com/" target="_blank" class="nav__social-link">
-                    <i class="ri-github-line"></i>
-                 </a>
-
-
-                 <a href="https://www.linkedin.com/" target="_blank" class="nav__social-link">
-                    <i class="ri-linkedin-box-line"></i>
-                 </a>
-              </div>
-           </div>
-
-           <!-- Toggle button -->
-           <div class="nav__toggle" id="nav-toggle">
-              <i class="ri-menu-line"></i>
-           </div>
+            <a href="#" style="font-weight: 800;" class="nav__logo">TECH-QUICK</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="./index.html" class="nav__link"><i class="ri-arrow-right-up-line"></i><span>Home</span></a></li>
+                    <li class="nav__item"><a href="./about.html" class="nav__link"><i class="ri-arrow-right-up-line"></i><span>About Us</span></a></li>
+                    <li class="nav__item"><a href="./blog.html" class="nav__link"><i class="ri-arrow-right-up-line"></i><span>Blog</span></a></li>
+                    <li class="nav__item"><a href="./course.html" class="nav__link"><i class="ri-arrow-right-up-line"></i><span>Course</span></a></li>
+                    <li class="nav__item"><a href="./privacy.html" class="nav__link"><i class="ri-arrow-right-up-line"></i><span>Privacy</span></a></li>
+                    <li class="nav__item"><a href="./disclaimer.html" class="nav__link"><i class="ri-arrow-right-up-line"></i><span>Disclaimer</span></a></li>
+                    <li class="nav__item"><a href="./contact.html" class="nav__link"><i class="ri-arrow-right-up-line"></i><span>Contact</span></a></li>
+                </ul>
+                <div class="nav__close" id="nav-close"><i class="ri-close-large-line"></i></div>
+                <div class="nav__social">
+                    <a href="https://www.instagram.com/" target="_blank" class="nav__social-link"><i class="ri-instagram-line"></i></a>
+                    <a href="https://github.com/" target="_blank" class="nav__social-link"><i class="ri-github-line"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank" class="nav__social-link"><i class="ri-linkedin-box-line"></i></a>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle"><i class="ri-menu-line"></i></div>
         </nav>
     </header>
 
     <form>
         <fieldset>
             <legend>Enter your information</legend>
-
             <div class="flex-group">
                 <div class="form-group">
                     <label for="name">Name:</label>
                     <input required type="text" id="name" placeholder="Enter your name">
                 </div>
-
                 <div class="form-group">
                     <label for="email">Email:</label>
                     <input required type="email" id="email" placeholder="Enter your email">
                 </div>
-
                 <div class="form-group">
                     <label for="message">Message:</label>
                     <textarea id="message" placeholder="Your message"></textarea>
                 </div>
             </div>
         </fieldset>
-
         <div class="form-group">
             <label for="date">Select a date:</label>
             <input required type="date" id="date">
         </div>
-
         <button class="submit-btn" type="submit">Book Appointment</button>
     </form>
-    <hr style="margin-top: 20px; width: 100%;">
-    <script>
-        const navMenu = document.getElementById('nav-menu'),
-          navToggle = document.getElementById('nav-toggle'),
-          navClose = document.getElementById('nav-close')
-    
-    
-      if(navToggle){
-       navToggle.addEventListener('click', () =>{
-          navMenu.classList.add('show-menu')
-       })
-      }
-    
-    
-        if(navClose){
-       navClose.addEventListener('click', () =>{
-          navMenu.classList.remove('show-menu')
-       })
-        }
-    </script>
+
     <footer>
         <div>
             <h2>Techquick</h2>
             <p>Le Lorem Ipsum est simplement du faux texte employé d</p>
             <div style="padding-bottom: 30px;">
-                <a href="#"><i style="color: white;" class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i style="color: white;" class="fa-brands fa-facebook"></i></a>
-                <a href=""><i style="color: white;" class='fa-brands fa-instagram' ></i></a>
+                <a href="#" style="font-size: 14px; color: white;"><i style="color: white;" class="fa-brands fa-twitter"></i></a>
+                <a href="#" style="font-size: 14px; color: white;"><i style="color: white;" class="fa-brands fa-facebook"></i></a>
+                <a href="#" style="font-size: 14px; color: white;"><i style="color: white;" class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
         <div class="footer-first-ul">
             <ul>
                 <h3>Hire A</h3>
-                <li>Website Developer</li>
-                <li>App Developer</li>
-                <li>Ui Ux Designer</li>
-                <li>Social Media Marketer</li>
+                <li><a href="#" style="font-size: 14px; color: white;">Website Developer</a></li>
+                <li><a href="#" style="font-size: 14px; color: white;">App Developer</a></li>
+                <li><a href="#" style="font-size: 14px; color: white;">UI/UX Designer</a></li>
+                <li><a href="#" style="font-size: 14px; color: white;">Social Media Marketer</a></li>
             </ul>
             <ul>
                 <h3>Pages</h3>
-                <li>Privacy policy</li>
-                <li>Disclaimer</li>
-                <li>About Us</li>
-                <li>Contact Us</li>
+                <li><a href="#" style="font-size: 14px; color: white;">Privacy policy</a></li>
+                <li><a href="#" style="font-size: 14px; color: white;">Disclaimer</a></li>
+                <li><a href="#" style="font-size: 14px; color: white;">About Us</a></li>
+                <li><a href="#" style="font-size: 14px; color: white;">Contact Us</a></li>
             </ul>
         </div>
         <div class="footer-second-ul">
             <ul>
                 <h3>Buy From Us</h3>
-                <li>Courses</li>
-                <li>Php Scripts</li>
-                <li>Ready Made Ui design template</li>
-                <li>App sourse code</li>
+                <li><a href="#" style="font-size: 14px; color: white;">Courses</a></li>
+                <li><a href="#" style="font-size: 14px; color: white;">PHP Scripts</a></li>
+                <li><a href="#" style="font-size: 14px; color: white;">Ready Made UI Design Template</a></li>
+                <li><a href="#" style="font-size: 14px; color: white;">App Source Code</a></li>
             </ul>
             <ul>
                 <h3>Hire Techquick For A Project</h3>
-                <li><button class="hire-btn">Lets Go</button></li>
+                <li><a href="#" style="font-size: 14px; color: white;"><button class="hire-btn">Lets Go</button></a></li>
             </ul>
         </div>
     </footer>
+    
+    <script>
+        const navMenu = document.getElementById('nav-menu'),
+              navToggle = document.getElementById('nav-toggle'),
+              navClose = document.getElementById('nav-close')
 
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.add('show-menu')
+            })
+        }
+
+        if (navClose) {
+            navClose.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu')
+            })
+        }
+    </script>
 </body>
 </html>
