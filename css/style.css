@@ -265,6 +265,8 @@ body{
 .box-title {
   text-align: center;
   margin-top: 10px;
+  padding-bottom: 120px;
+
 }
 
 .box-title h3 {
@@ -802,6 +804,9 @@ body{
     flex-direction: column;
     row-gap: 30px;
 }
+.card-text{
+  width: 400px;
+}
 .slide p{
     padding: 0 100px;
     text-align: center;
@@ -915,6 +920,9 @@ footer {
   
   
 @media screen and (max-width: 888px){
+  .card-text{
+    width: 300px;
+  }
     .lala{
         display: none;
     }
