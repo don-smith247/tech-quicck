@@ -17,6 +17,8 @@
 <link href="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/css/ionicons.min.css" rel="stylesheet">
 <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
   <div class="video-overlay" id="videoOverlay">
@@ -733,7 +735,7 @@ form, h2, .center-text, .action-buttons {
                             <img width="250px" height="200px" src="./img/Rectangle 54.png" alt="PHP CMS">
                         </div>
                         <div class="box-title">
-                            <h3 style="font-size: 11px;">PHP Content Management System</h3>
+                            <h3 style="font-size: 1px;">PHP Content Management System</h3>
                             <button>PHP</button>
                             <p>A flexible and secure PHP-based CMS ontent management capabilities.</p>
                             <h4>Starting Price: 150$</h4>
@@ -755,10 +757,10 @@ form, h2, .center-text, .action-buttons {
         </section> 
         <section class="containerr">
             <h2>What People Say About Us</h2>
-            <div class="testimonial mySwiper">
+            <div class="testimonial mySwiper" >
                 <div class="testi-content swiper-wrapper">
                     <div class="slide swiper-slide">
-                        <img src="./img/Rectangle 49.png" alt="" class="image">
+                        <img style="margin-top: 50px;" src="./img/Rectangle 49.png" alt="" class="image">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit perspiciatis aliquid odio hic nam? Sit beatae omnis, quasi dolorum vero iste soluta reiciendis repellendus eius sunt quod, neque voluptatum. Nam.</p>
                         <i class='bx bxs-quote-alt-left quote-icon'></i>
                         <div class="details">
@@ -786,11 +788,27 @@ form, h2, .center-text, .action-buttons {
                     </div>
                     
                 </div>
-                <div class="swiper-button-next lala"></div>
+                <!-- <div class="swiper-button-next lala"></div>
                 <div class="swiper-button-prev lala"></div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination"></div> -->
             </div>
         </section>
+        
+        <script>
+            const swiper = new Swiper('.mySwiper', {
+                loop: true,                     
+                navigation: {                  
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {                   
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                slidesPerView: 1,               
+                spaceBetween: 30,               
+            });
+        </script>
         <footer>
             <div>
                 <h2>Techquick</h2>

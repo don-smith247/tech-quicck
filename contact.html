@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <title>Contact</title>
 </head>
 <body>
@@ -164,6 +165,10 @@
   </footer>
   
     <script>
+      gsap.from(".pp-section h3, .pp-section h2", {duration: 1.5, opacity: 0, x: -100, stagger: 0.3});
+      gsap.from(".pp-section p", {duration: 1.5, opacity: 0, delay: 0.5, y: 50, stagger: 0.3});
+      gsap.from(".footer-first-ul ul, .footer-second-ul ul", {duration: 2, opacity: 0, y: 50, stagger: 0.3, delay: 1});
+
         const navMenu = document.getElementById('nav-menu'),
           navToggle = document.getElementById('nav-toggle'),
           navClose = document.getElementById('nav-close')

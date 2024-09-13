@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP Basic Test</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <script>
+        gsap.to(".box", {
+            duration: 2,
+            x: 200,
+            rotation: 360,
+            backgroundColor: "#e74c3c",
+            repeat: -1,
+            yoyo: true
+        });
+    </script>
+</body>
+</html>

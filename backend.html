@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
 </head>
 <body>
     <header class="header" id="header">
@@ -190,6 +191,14 @@
           navMenu.classList.remove('show-menu')
        })
         }
+       </script>
+       <script>
+         gsap.from(".first-section-product img", {duration: 1.5, opacity: 0, x: -100});
+         gsap.from(".first-section-product h3, .first-section-product ul, .first-section-product p", {duration: 1.5, opacity: 0, delay: 0.5, y: 50});
+         gsap.from(".what-u-will-learn h4", {duration: 2, opacity: 0, stagger: 0.3, y: 50});
+         gsap.from(".second-section-product h2", {duration: 1.5, opacity: 0, x: 100});
+         gsap.from(".third-section-product button", {duration: 2, opacity: 0, scale: 0.5, delay: 1});
+         gsap.from("footer", {duration: 2.5, opacity: 0, y: 50, delay: 1});
        </script>
 
 </body>

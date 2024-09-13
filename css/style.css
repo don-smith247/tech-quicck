@@ -731,7 +731,7 @@ body{
 
 .team-member {
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   margin-bottom: 20px;
@@ -772,6 +772,20 @@ body{
   .team-member {
       flex: 0 1 100%; 
   }
+  .swiper-button-next{
+    display: none;
+  }
+  .swiper-pagination-bullet{
+    display: none;
+  }.lala::after,
+  .lala::before {
+    display: none;
+  }
+  .swiper-pagination{
+    display: none;
+  }
+  
+
 }
 
 .containerr{
@@ -785,78 +799,94 @@ body{
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.testimonial{
-    max-width: 900px;
-    position: relative;
-    width: 100%;
-    padding: 50px 0;
-    row-gap: 30px;
-    overflow: hidden;
+.testimonial {
+  max-width: 900px;
+  margin: 0 auto; /* Center horizontally */
+  position: relative;
+  width: 100%;
+  padding: 50px 0;
+  row-gap: 30px;
+  overflow: hidden;
 }
-.testimonial .image{
-    height: 170px;
-    width: 170px;
-    object-fit: cover;
-    border-radius: 50%;
+
+.testimonial .image {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border-radius: 50%;
 }
-.testimonial .slide{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 30px;
+
+.testimonial .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
 }
-.card-text{
+
+.card-text {
   width: 400px;
 }
-.slide p{
-    padding: 0 100px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 500;
-    color: #333;
+
+.slide p {
+  padding: 0 100px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
 }
-.slide .quote-icon{
-    font-size: 30px;
-    color: #050A30;
+
+.slide .quote-icon {
+  font-size: 30px;
+  color: #050A30;
 }
-.slide .details{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.slide .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.details .name{
-    font-size: 14px;
-    font-weight: 600;
-    color: #333;
+
+.details .name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
 }
-.details .job{
-    font-size: 12px;
-    font-weight: 400;
-    color: #333;
+
+.details .job {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
 }
-.lala{
-    height: 40px;
-    width: 40px;
-    background-color: #cac9c9;
-    border-radius: 50%;
-    transform: translateY(30px);
-    transition: 0.2s ease;
+
+.lala {
+  height: 40px;
+  width: 40px;
+  background-color: #cac9c9;
+  border-radius: 50%;
+  transform: translateY(30px);
+  transition: 0.2s ease;
 }
+
 .lala::after,
-.lala::before{
-    font-size: 20px;
-    color: white;
+.lala::before {
+  font-size: 10px;
+  color: white;
 }
-.swiper-pagination-bullet{
-    background-color: #333;
+
+.swiper-pagination-bullet {
+  background-color: #333;
+  /* font-size: 20px; */
 }
-.swiper-pagination-bullet-active{
-    background-color: #050A30;
+
+.swiper-pagination-bullet-active {
+  background-color: #050A30;
 }
-.lala:hover{
-    background-color: #333;
+
+.lala:hover {
+  background-color: #333;
 }
+
 footer {
     background-color: #050A30;
     color: white;
