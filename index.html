@@ -19,12 +19,13 @@
 <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
 </head>
 <body>
   <div class="video-overlay" id="videoOverlay">
     <video class="background-video" autoplay muted loop>
         <source src="./7154236-hd_1066_1920_25fps.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+        
     </video>
     <div class="content-on-video">
         <h2 class="hhh2">We are <span>passionate </span>about growing <span>business</span> without borders</h2>
@@ -43,7 +44,7 @@
         </div>        
     </div>
     <style>
-.hhh2 {
+        .hhh2 {
     color: white;
     margin-bottom: 20px;
     text-align: center;
@@ -136,7 +137,6 @@ form, h2, .center-text, .action-buttons {
     }
     
 }
-
     </style>
     <div style="color: black;" class="close-icon" onclick="closeIntro()">Skip ✖</div>
   </div>
@@ -231,11 +231,6 @@ form, h2, .center-text, .action-buttons {
             </div>
         </section>
         <style>
-            body {
-                margin: 0;
-                font-family: 'Poppins', sans-serif;
-            }
-    
             .hero-container {
                 display: flex;
                 justify-content: center;
@@ -545,7 +540,8 @@ form, h2, .center-text, .action-buttons {
                 border-radius: 10px;
             }
         </style>
-          <section class="section">
+          <section class="section" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h2 style="margin-bottom: 50px;">Trusted by</h2>
             <div class="carousel-container">
               <div class="carousel-slide" data-page="page1">
                 <img src="./img/homeworktips.jpg" alt="Slide 1">
@@ -650,7 +646,7 @@ form, h2, .center-text, .action-buttons {
                 </div>
             
                 <div class="box">
-                <!-- APP Content -->
+                
                 <div data-tab-content="app" id="gaga" class="boxx active">
                     <div class="under-box">
                         <div>
@@ -676,7 +672,7 @@ form, h2, .center-text, .action-buttons {
                     </div>
                 </div>
             
-                <!-- Laravel Content -->
+                
                 <div data-tab-content="laravel" class="boxx">
                     <div class="under-box">
                         <div>
@@ -702,7 +698,7 @@ form, h2, .center-text, .action-buttons {
                     </div>
                 </div>
             
-                <!-- UI Design Content -->
+                
                 <div data-tab-content="ui-design" class="boxx">
                     <div class="under-box">
                         <div>
@@ -728,7 +724,7 @@ form, h2, .center-text, .action-buttons {
                     </div>
                 </div>
             
-                <!-- PHP Content -->
+                
                 <div data-tab-content="php" class="boxx">
                     <div class="under-box">
                         <div>
@@ -755,60 +751,102 @@ form, h2, .center-text, .action-buttons {
                 </div>
                 </div>  
         </section> 
-        <section class="containerr">
-            <h2>What People Say About Us</h2>
-            <div class="testimonial mySwiper" >
-                <div class="testi-content swiper-wrapper">
-                    <div class="slide swiper-slide">
-                        <img style="margin-top: 50px;" src="./img/Rectangle 49.png" alt="" class="image">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit perspiciatis aliquid odio hic nam? Sit beatae omnis, quasi dolorum vero iste soluta reiciendis repellendus eius sunt quod, neque voluptatum. Nam.</p>
-                        <i class='bx bxs-quote-alt-left quote-icon'></i>
-                        <div class="details">
-                            <span class="name">Marnie Lotter</span>
-                            <span class="job">Web Developer</span>
+        <section class="what-people">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                       <div class="card swiper-slide">
+                           <div class="image-content">
+                              <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="./img/kayyyyy.jpg" alt="" class="card-img">
+                                </div>
+                           </div>
+                           <div class="card-content">
+                               <h2 class="name">David Dell</h2>
+                               <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, reiciendis.</p>
+                               <button class="button">View More</button>
+                           </div>
+                       </div>
+                       <div class="card swiper-slide">
+                        <div class="image-content">
+                           <span class="overlay"></span>
+                             <div class="card-image">
+                                <img src="./img/kayyyyy.jpg" alt="" class="card-img">
+                             </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">John Doe</h2>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, reiciendis.</p>
+                            <button class="button">View More</button>
                         </div>
                     </div>
-                    <div class="slide swiper-slide">
-                        <img src="./img/Rectangle 50.png" alt="" class="image">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit perspiciatis aliquid odio hic nam? Sit beatae omnis, quasi dolorum vero iste soluta reiciendis repellendus eius sunt quod, neque voluptatum. Nam.</p>
-                        <i class='bx bxs-quote-alt-left quote-icon'></i>
-                        <div class="details">
-                            <span class="name">Marnie Lotter</span>
-                            <span class="job">Web Developer</span>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                           <span class="overlay"></span>
+                             <div class="card-image">
+                                <img src="./img/kayyyyy.jpg" alt="" class="card-img">
+                             </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Jane Smith</h2>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, reiciendis.</p>
+                            <button class="button">View More</button>
                         </div>
                     </div>
-                    <div class="slide swiper-slide">
-                        <img src="./img/Rectangle 51.png" alt="" class="image">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit perspiciatis aliquid odio hic nam? Sit beatae omnis, quasi dolorum vero iste soluta reiciendis repellendus eius sunt quod, neque voluptatum. Nam.</p>
-                        <i class='bx bxs-quote-alt-left quote-icon'></i>
-                        <div class="details">
-                            <span class="name">Marnie Lotter</span>
-                            <span class="job">Web Developer</span>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                           <span class="overlay"></span>
+                             <div class="card-image">
+                                 <img src="./img/kayyyyy.jpg" alt="" class="card-img">
+                             </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Emily Brown</h2>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, reiciendis.</p>
+                            <button class="button">View More</button>
                         </div>
                     </div>
-                    
+                    </div>
                 </div>
-                <!-- <div class="swiper-button-next lala"></div>
-                <div class="swiper-button-prev lala"></div>
-                <div class="swiper-pagination"></div> -->
+                
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
         <script>
-            const swiper = new Swiper('.mySwiper', {
-                loop: true,                     
-                navigation: {                  
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                pagination: {                   
-                    el: '.swiper-pagination',
+            var swiper = new Swiper(".slide-content", {
+                slidesPerView: 3,
+                spaceBetween: 25,
+                loop: true,
+                centerSlide: 'true',
+                fade: 'true',
+                grabCursor: 'true',
+                pagination: {
+                    el: ".swiper-pagination",
                     clickable: true,
+                    dynamicBullets: true,
                 },
-                slidesPerView: 1,               
-                spaceBetween: 30,               
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints:{
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    520: {
+                        slidesPerView: 2,
+                    },
+                    950: {
+                        slidesPerView: 3,
+                    },
+                },
             });
         </script>
+        
         <footer>
             <div>
                 <h2 style="margin-right: 200px;">Techquick</h2>
@@ -853,6 +891,7 @@ form, h2, .center-text, .action-buttons {
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="./js/swiper-bundle.min.js"></script>
         <script src="./js/index.js"></script>
+        <script src="./js/k.js"></script>
     </main>
 </body>
 </html>
