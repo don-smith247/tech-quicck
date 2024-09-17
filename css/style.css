@@ -729,8 +729,10 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  min-height: 70vh;
+  min-height: 90vh;
   display: flex;
+  flex-direction: column;
+  gap: 40px;
   align-items: center;
   justify-content: center;
   background-color: #Efefef;
